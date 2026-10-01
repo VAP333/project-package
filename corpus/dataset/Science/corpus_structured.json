@@ -1,0 +1,2048 @@
+{
+  "document_manifest": {
+    "document_id": "AKS_SCIENCE_CLASS8_SCIENCE",
+    "title_marathi": "सामान्य विज्ञान, इयत्ता आठवी",
+    "title_english": "General Science, Std. 8",
+    "subject": "science",
+    "class": 8,
+    "medium": "Marathi",
+    "curriculum_board": "Maharashtra State Board (Balbharati)",
+    "publisher": "महाराष्ट्र राज्य पाठ्यपुस्तक निर्मिती व अभ्यासक्रम संशोधन मंडळ, पुणे",
+    "first_edition_year": 2018,
+    "pdf_total_pages": 148,
+    "content_pdf_page_range": [
+      11,
+      144
+    ],
+    "front_matter_pdf_page_range": [
+      1,
+      10
+    ],
+    "back_matter_pdf_page_range": [
+      145,
+      148
+    ],
+    "back_matter_components": [
+      "इयत्ता आठवी सामान्य विज्ञान शब्दसूची (glossary with English + phonetic-transliteration, pdf pp.145-146)",
+      "blank/back cover (pdf pp.147-148)"
+    ],
+    "printed_page_offset": "printed_page = pdf_page - 10 (verified for all 19 chapter starts)",
+    "front_matter_components": [
+      "title/cover pages",
+      "government approval notice",
+      "committee/author credits",
+      "copyright notice",
+      "table of contents (अनुक्रमणिका, pdf p.10)"
+    ],
+    "supplementary_content": [
+      "QR codes referenced for DIKSHA digital content"
+    ],
+    "source_status": "SOURCE_VERIFIED",
+    "note": "The back-matter glossary (शब्दसूची) is a HIGH-VALUE pre-existing pronunciation resource: it gives Marathi term + English term + a phonetic Marathi transliteration of the English pronunciation for ~150 technical terms. This should be ingested directly as a seed for the pronunciation-risk lexicon rather than re-derived, per spec section 25's caution against inventing Romanized phonetics."
+  },
+  "cross_chapter_class8_science_grammar": {
+    "common_pattern_across_book": "Nearly every chapter opens with 'थोडे आठवा' (recall box, prior-grade knowledge) and/or 'सांगा पाहू' (discussion prompt), interleaves 'करून पहा' (hands-on activity/experiment) and 'जरा डोके चालवा' (reasoning prompt) throughout the body, and closes with स्वाध्याय. This 'recall -> activity-driven concept building -> स्वाध्याय' template is COMMON across all 19 chapters (pattern_scope: COMMON) — structurally similar to History's template but activity-centred rather than narrative-centred, matching spec's expectation (§10) that subject grammar differs meaningfully by subject even within one board/grade.",
+    "recurring_boxed_element_types": [
+      "थोडे आठवा (recall, nearly universal)",
+      "सांगा पाहू (discussion prompt, nearly universal)",
+      "करून पहा (hands-on activity/experiment — THE defining Science-chapter element, present in all 19 chapters, often multiple per chapter)",
+      "जरा डोके चालवा (reasoning/thought-experiment prompt)",
+      "माहीत आहे का तुम्हांला (enrichment fact box, very frequent)",
+      "इंटरनेट माझा मित्र (internet-research prompt, excluded from normal narration)",
+      "हे नेहमी लक्षात ठेवा (key-fact/summary box, occasionally safety-critical)",
+      "सोडवलेली/सोडविलेली उदाहरणे (worked numerical examples — concentrated in CH_03, CH_14, CH_16, the more mathematical chapters)",
+      "परिचय शास्त्रज्ञांचा / असे होऊन गेले / मागे वळून पाहताना (scientist-biography or history-of-science vignette, appears in CH_03, CH_10, CH_11, CH_18 — GENRE_SPECIFIC, used to humanize discovery)"
+    ],
+    "genre_specific_variants": {
+      "mathematical_formula_heavy_chapters": [
+        "CH_03 (बल व दाब)",
+        "CH_14 (उष्णतेचे मापन)",
+        "CH_16 (प्रकाशाचे परावर्तन)"
+      ],
+      "historical_model_sequence_chapters": [
+        "CH_05 (अणूचे अंतरंग — uniquely presents 4 sequential scientist/model pairs)"
+      ],
+      "biology_organelle_or_system_catalogue_chapters": [
+        "CH_10 (पेशी)",
+        "CH_11 (मानवी शरीर)"
+      ],
+      "environmental_policy_and_social_issue_chapters": [
+        "CH_08 (प्रदूषण)",
+        "CH_09 (आपत्ती व्यवस्थापन)",
+        "CH_17 (मानवनिर्मित पदार्थ, environmental-impact sections)",
+        "CH_18 (परिसंस्था, human-impact sections)"
+      ],
+      "chemistry_reaction_chapters": [
+        "CH_07 (धातू-अधातू)",
+        "CH_12 (आम्ल आम्लारी)",
+        "CH_13 (रासायनिक बदल)"
+      ]
+    },
+    "pronunciation_risk_density": "Dense but differently-shaped than History: fewer personal names overall, but very high density of technical/scientific terminology (chemical compound names, taxonomic terms, physics units) plus a real mix of scientist names (many non-Indian: Dalton, Thomson, Rutherford, Bohr, Archimedes, Golgi, Harvey, Landsteiner). The book's own back-matter glossary (शब्दसूची, pdf pp.145-146) already gives ~150 term-pairs with phonetic transliteration and should seed this lexicon directly rather than being re-derived from scratch.",
+    "narration_policy_pattern": "Body prose -> READ_THEN_EXPLAIN (default). करून पहा activity instructions -> READ_DIRECTLY (procedural, should be read as literal step-by-step instructions, not summarized). सोडवलेली उदाहरणे (worked numerical examples) -> READ_THEN_EXPLAIN but REQUIRE a distinct mathematical_narration speaking style (state 'दिलेले'/given values, then formula, then substitution, then answer — never collapse to prose). इंटरनेट माझा मित्र / माहिती मिळवा (research prompts) -> EXCLUDE_FROM_NORMAL_READING, these send the student to an external search rather than containing narratable content themselves. Safety-warning content (never taste unknown chemicals CH_12, never add water to concentrated acid CH_12, fire/earthquake dos-and-don'ts CH_09) -> flagged IMMEDIATE spoken_priority regardless of surrounding chapter's general narration policy, since this is life-safety information.",
+    "speaking_style_taxonomy_for_this_subject": [
+      {
+        "style": "scientific_explanation",
+        "used_for": "concept/definition/property prose — the dominant style for most chapters"
+      },
+      {
+        "style": "mathematical_narration (NEW, not seen in History)",
+        "used_for": "worked numerical examples and formula derivations — CH_03, CH_14, CH_16 specifically need this as a first-class distinct style per spec §18/§20's requirement not to treat mathematical expressions as ordinary prose"
+      },
+      {
+        "style": "procedural/instructional (NEW, not seen in History)",
+        "used_for": "करून पहा hands-on activity steps — imperative, numbered, safety-annotated where relevant"
+      },
+      {
+        "style": "historical_narration",
+        "used_for": "brief vignette boxes only (CH_05 model-history, CH_10/CH_11 scientist bios, CH_18 term etymology) — a minority mode within Science, unlike History where it's dominant"
+      }
+    ]
+  },
+  "chapter_specific_exceptions": [
+    "CH_05: uniquely structured as a sequence of four historical scientific models (Dalton->Thomson->Rutherford->Bohr), each with its own evidence and limitation — closer to History's narrative-arc pattern than to the rest of Science's activity-driven pattern. CHAPTER_SPECIFIC / possibly a bridging pattern worth flagging for cross-subject grammar comparison.",
+    "CH_09: contains genuinely life-safety-critical content (earthquake/fire dos-and-don'ts) that should override the chapter's general narration policy with IMMEDIATE priority for those specific passages.",
+    "CH_12: contains two explicit safety warnings (never taste/smell/touch unknown chemicals; never add water to concentrated sulfuric acid) that are SAFETY_CRITICAL and should be flagged IMMEDIATE regardless of general chapter policy.",
+    "CH_02: contains a case-study paragraph (Gaurav, a child from a poor family with an alcoholic father) requiring careful, non-judgmental narration tone — similar sensitivity handling to History's treatment of poverty/hardship content.",
+    "CH_08: contains the Bhopal gas tragedy (real mass-casualty industrial disaster, ~8000 deaths) — requires the same measured, non-dramatized delivery flagged for History's violence/tragedy content.",
+    "CH_17: contains real health-hazard content about thermocol/styrene (carcinogenicity, leukemia/lymphoma risk) — factual, non-alarmist tone needed.",
+    "CH_18: the 'Divija and the bee sting' reasoning scenario briefly uses narrative/empathy-building framing atypical for the rest of the chapter — worth preserving rather than flattening."
+  ],
+  "human_verification_queue": {
+    "HIGH_RISK": [
+      "All chemical formulas, equations, and numerical worked-example arithmetic across CH_03/05/06/07/12/13/14/16 — must be checked against the rendered page since OCR/extraction of subscripts, superscripts and special characters (₂, ⁻, etc.) is unreliable and was visibly imperfect in raw extraction (e.g. some formulas showed spacing artifacts)",
+      "All scientist names and their diacritics/transliteration (Dalton, Thomson, Rutherford, Bohr, Archimedes, Golgi, Harvey, Landsteiner, etc.)",
+      "The back-matter glossary (शब्दसूची) pronunciation transliterations — worth cross-checking against a human speaker before use as TTS ground truth",
+      "All diagrams (very high density in CH_01, CH_05, CH_10, CH_11, CH_16, CH_19) — accessibility descriptions are currently UNVERIFIED, captions alone are insufficient",
+      "Reading order at pages with side-by-side tables and diagrams (e.g. p.31 worked-examples page had visible column-interleaving artifacts in raw extraction)"
+    ],
+    "MEDIUM_RISK": [
+      "narration_policy and speaking_style assignments (AksharSetu recommendations, not textbook facts)",
+      "structural_pattern discovery per chapter (SUPPORTED_INFERENCE from heading/activity order)",
+      "Safety-critical content flagging (IMMEDIATE priority assignments) — the flagging logic itself should be human-reviewed given the stakes of getting this wrong"
+    ],
+    "LOW_RISK": [
+      "chapter titles and page ranges (SOURCE_VERIFIED via title-string search + printed/PDF offset check)",
+      "assessment type counts (mechanically countable from स्वाध्याय headings)"
+    ]
+  },
+  "cacheable_artifacts": [
+    {
+      "artifact": "page_source_extract.jsonl",
+      "layer": "1. document parsing",
+      "cache_key": "AKS_SCIENCE_CLASS8_SCIENCE:page:{pdf_page_number}",
+      "scope": "STATIC"
+    },
+    {
+      "artifact": "chapter_inventory + structural_pattern per chapter",
+      "layer": "2-4. page structure / region classification / learning graph",
+      "cache_key": "AKS_SCIENCE_CLASS8_SCIENCE:chapter:{chapter_id}:blueprint",
+      "scope": "VERSIONED"
+    },
+    {
+      "artifact": "back-matter glossary (शब्दसूची) ingested as pronunciation lexicon seed",
+      "layer": "8. pronunciation",
+      "cache_key": "AKS_SCIENCE_CLASS8_SCIENCE:pronunciation_lexicon",
+      "scope": "STATIC once human-verified"
+    },
+    {
+      "artifact": "criss-cross molecular-formula method (CH_06) and worked-example solution patterns (CH_03/14/16)",
+      "layer": "6-7. narration plan / deterministic-rule engine",
+      "cache_key": "AKS_SCIENCE_CLASS8_SCIENCE:deterministic:{rule_id}",
+      "scope": "STATIC — these are fully algorithmic, strong candidates for a rule-based solver rather than LLM narration each time"
+    },
+    {
+      "artifact": "narration_policy + speaking_style per learning unit, including safety-critical IMMEDIATE flags",
+      "layer": "6-7. narration plan / speaking-style plan",
+      "cache_key": "AKS_SCIENCE_CLASS8_SCIENCE:chapter:{chapter_id}:narration_plan",
+      "scope": "VERSIONED"
+    }
+  ],
+  "recommended_next_step": "This corpus covers Level 1-4 (document/chapter/section/learning-unit) for all 19 chapters, using text-layer evidence only. Given Science's exceptionally high diagram density (especially CH_01, CH_05, CH_10, CH_11, CH_16, CH_19) and its many chemical/mathematical formulas that OCR handles unreliably, a page-rasterization + visual-verification pass is even more important here than for History before any narration/TTS is generated. Recommend prioritizing CH_05, CH_10 and CH_16 first given their diagram density and conceptual dependence on visuals.",
+  "schema_version": "aksharsetu_v0.1_pilot",
+  "chapter_inventory": [
+    {
+      "chapter_id": "CH_01",
+      "chapter_number": 1,
+      "title_marathi": "सजीव सृष्टी व सूक्ष्मजीवांचे वर्गीकरण",
+      "title_english_gloss": "Classification of Living World and Microbes",
+      "pdf_page_range": [
+        11,
+        15
+      ],
+      "printed_page_range": [
+        1,
+        5
+      ],
+      "chapter_type": "science_expository",
+      "structural_pattern": {
+        "pattern_id": "PAT_SCI_01",
+        "pattern_name": "category_survey_with_activity: historical background of classification schemes -> Whittaker 5-kingdom system -> per-kingdom活动(करून पहा)/characteristics enumeration",
+        "pattern_scope": "SUBJECT_SPECIFIC",
+        "evidence": "SUPPORTED_INFERENCE - derived from heading/activity/example order in raw text extraction"
+      },
+      "learning_units": [
+        "जैवविविधता व वर्गीकरणाची आवश्यकता",
+        "व्हिटाकर पंचसृष्टी वर्गीकरण पद्धती (1969)",
+        "सृष्टी 1: मोनेरा (जीवाणू)",
+        "सृष्टी 2: प्रोटिस्टा (अमिबा, युग्लिना)",
+        "सृष्टी 3: कवके (बुरशी, यीस्ट)",
+        "सूक्ष्मजीवांचे वर्गीकरण (जीवाणू, आदिजीव, कवके, शैवाल, विषाणू)"
+      ],
+      "key_concepts_defined": [
+        {
+          "concept": "जैविक वर्गीकरण",
+          "gloss": "biological classification into groups/subgroups"
+        },
+        {
+          "concept": "पंचसृष्टी वर्गीकरण",
+          "gloss": "Whittaker's five-kingdom classification, criteria: cell complexity, organism complexity, nutrition mode, life style, phylogenetic relationship"
+        },
+        {
+          "concept": "विषाणू",
+          "gloss": "viruses, on the border of living/non-living, studied under microbiology"
+        }
+      ],
+      "pronunciation_risk_terms": [
+        "कार्ल लिनिअस (1735)",
+        "हेकेल (1866)",
+        "चॅटन (1925)",
+        "कोपलँड (1938)",
+        "रॉबर्ट हार्डींग व्हिटाकर (1920-1980)",
+        "लॅक्टोबॅसिलाय",
+        "एन्टामिबा हिस्टोलिटिका",
+        "प्लाज्मोडिअम व्हायवॅक्स",
+        "बॅक्टेरिओफाज",
+        "राष्ट्रीय विषाणू संस्था पुणे (1952)"
+      ],
+      "visual_and_activity_elements": [
+        {
+          "type": "थोडे आठवा (recall box)",
+          "topic": "prior-grade classification hierarchy, binomial nomenclature",
+          "narration_policy": "READ_DIRECTLY"
+        },
+        {
+          "type": "इतिहासात डोकावताना (historical timeline box)",
+          "topic": "1735-1938 classification history",
+          "narration_policy": "READ_THEN_EXPLAIN"
+        },
+        {
+          "type": "करून पहा (activity, 3x)",
+          "topic": "microscope observations of curd bacteria, pond water amoeba, bread mold",
+          "narration_policy": "READ_DIRECTLY, hands-on lab activity"
+        },
+        {
+          "type": "जरा डोके चालवा",
+          "topic": "merits/demerits of Whittaker's system",
+          "narration_policy": "EXPLAIN, invite reasoning"
+        },
+        {
+          "type": "माहीत आहे का तुम्हांला",
+          "topic": "microbes causing disease by host (human/cattle/plant/bacteria)",
+          "narration_policy": "READ_THEN_EXPLAIN"
+        },
+        {
+          "type": "diagrams 1.1-1.8",
+          "topic": "five-kingdom tree, Monera organisms, Protista organisms, fungi, bacteria shapes, microbe examples",
+          "narration_policy": "ON_DEMAND - needs accessibility description"
+        }
+      ],
+      "assessment": {
+        "mcq_style_classification_count": 2,
+        "id_the_organism_count": 6,
+        "matching_count": 1,
+        "true_false_with_explanation_count": 5,
+        "activity_projects_count": 2,
+        "types_present": [
+          "वर्गीकरण करा",
+          "पंचसृष्टी वर्गीकरण पूर्ण करा (diagram fill-in)",
+          "जोडीदार शोधा (matching)",
+          "चूक/बरोबर + स्पष्टीकरण",
+          "ओळखा पाहू मी कोण (riddle-style ID)",
+          "आकृत्या काढा",
+          "आकारानुसार चढत्या क्रमाने लिहा",
+          "उपक्रम"
+        ]
+      },
+      "narration_policy": "READ_THEN_EXPLAIN",
+      "speaking_style": "scientific_explanation (taxonomy/category enumeration; diagrams and tables are load-bearing, not decorative - needs strong accessibility description pass)",
+      "audience": "STUDENT",
+      "student_relevance": "ESSENTIAL",
+      "cross_chapter_references": [],
+      "source_status": "SOURCE_VERIFIED",
+      "verification_status": "TEACHER_OUTPUT"
+    },
+    {
+      "chapter_id": "CH_02",
+      "chapter_number": 2,
+      "title_marathi": "आरोग्य व रोग",
+      "title_english_gloss": "Health and Disease",
+      "pdf_page_range": [
+        16,
+        23
+      ],
+      "printed_page_range": [
+        6,
+        13
+      ],
+      "chapter_type": "science_expository",
+      "structural_pattern": {
+        "pattern_id": "PAT_SCI_02",
+        "pattern_name": "definition->classification(by duration/cause)->disease-by-disease table(cause/transmission/symptoms/treatment)->lifestyle & prevention",
+        "pattern_scope": "SUBJECT_SPECIFIC",
+        "evidence": "SUPPORTED_INFERENCE - derived from heading/activity/example order in raw text extraction"
+      },
+      "learning_units": [
+        "आरोग्य व रोग व्याख्या",
+        "रोगांचे प्रकार (कालावधीनुसार/कारणांनुसार, अनुवंशिक/उपार्जीत, संसर्गजन्य/असंसर्गजन्य)",
+        "संसर्गजन्य रोग सारणी (क्षय, कावीळ, अतिसार, पटकी, विषमज्वर)",
+        "डेंग्यू, स्वाईन फ्लू, एड्स",
+        "रेबीज (प्राण्यांमार्फत रोगप्रसार)",
+        "असंसर्गजन्य रोग: कर्करोग, मधुमेह, हृदयविकार",
+        "औषधांचा गैरवापर, जेनेरिक औषधे",
+        "जीवनशैली व लसीकरण",
+        "रक्तदान व नेत्रदान"
+      ],
+      "key_concepts_defined": [
+        {
+          "concept": "आरोग्य",
+          "gloss": "WHO-style definition: complete physical, mental and social wellbeing, not merely absence of disease"
+        },
+        {
+          "concept": "संसर्गजन्य रोग",
+          "gloss": "communicable disease spread via contaminated air/water/food/vector"
+        },
+        {
+          "concept": "जेनेरिक औषधे",
+          "gloss": "generic (unbranded, unpatented) medicines, same efficacy as branded, lower cost"
+        }
+      ],
+      "pronunciation_risk_terms": [
+        "मायकोबॅक्टेरिअम ट्युबरक्युली",
+        "हेपॅटीटीस A-E",
+        "शिगेल्ला बॅसीलस",
+        "एन्टामिबा हिस्टोलिटीका",
+        "व्हिब्रियो कॉलरी",
+        "सालमोनेला टायफी",
+        "एडिस इजिप्ती",
+        "फ्लेवी व्हायरस",
+        "इन्फ्लुएन्सा ए (H1N1)",
+        "एन.आय.व्ही. पुणे",
+        "एन.आय.सी.डी दिल्ली",
+        "HIV/AIDS",
+        "ELISA चाचणी",
+        "पंतप्रधान जन औषध योजना (2015)"
+      ],
+      "visual_and_activity_elements": [
+        {
+          "type": "थोडे आठवा / सांगा पाहू (multiple recall boxes)",
+          "topic": "prior experience with illness",
+          "narration_policy": "READ_DIRECTLY"
+        },
+        {
+          "type": "तक्ता 2.3 काही संसर्गजन्य रोग (large comparison table)",
+          "topic": "disease/cause/transmission/symptoms/treatment for 5 diseases",
+          "narration_policy": "READ_THEN_EXPLAIN — table structure needs explicit row/column narration strategy, not flat read"
+        },
+        {
+          "type": "माहीत आहे का तुम्हांला (5x)",
+          "topic": "malaria/filariasis vector distinction, swine flu origin, HIV origin, diabetes statistics, cancer treatment tech",
+          "narration_policy": "READ_THEN_EXPLAIN"
+        },
+        {
+          "type": "इंटरनेट माझा मित्र (4x)",
+          "topic": "research prompts on chickenpox, WHO, rabies, diabetes",
+          "narration_policy": "EXCLUDE_FROM_NORMAL_READING (internet research task, not core content)"
+        },
+        {
+          "type": "परिच्छेद वाचून प्रश्नांची उत्तरे द्या (case-study paragraph, Gaurav)",
+          "topic": "applied reasoning on disease risk factors",
+          "narration_policy": "READ_THEN_EXPLAIN; sensitivity note - depicts a poor family, alcoholic father; read factually, no moralizing tone"
+        }
+      ],
+      "assessment": {
+        "comparison_count": 1,
+        "odd_one_out_count": 2,
+        "short_answer_count": 3,
+        "conditional_reasoning_count": 3,
+        "case_study_count": 1,
+        "prevention_writing_count": 1,
+        "list_making_count": 1,
+        "activity_projects_count": 3,
+        "types_present": [
+          "फरक स्पष्ट करा",
+          "वेगळा शब्द ओळखा",
+          "एक-दोन वाक्यांत उत्तरे",
+          "तर काय साध्य होईल",
+          "परिच्छेद-आधारित प्रश्न",
+          "महत्त्व स्पष्ट करा",
+          "यादी करा",
+          "उपक्रम"
+        ]
+      },
+      "narration_policy": "READ_THEN_EXPLAIN",
+      "speaking_style": "scientific_explanation blended with explanatory_teacher (large data tables need a distinct 'table narration' sub-style: announce table purpose, then row-by-row on request rather than one continuous read)",
+      "audience": "STUDENT",
+      "student_relevance": "ESSENTIAL",
+      "cross_chapter_references": [
+        "prerequisite_for: CH_18 (परिसंस्था touches on disease vectors in ecosystem context)"
+      ],
+      "source_status": "SOURCE_VERIFIED",
+      "verification_status": "TEACHER_OUTPUT"
+    },
+    {
+      "chapter_id": "CH_03",
+      "chapter_number": 3,
+      "title_marathi": "बल व दाब",
+      "title_english_gloss": "Force and Pressure",
+      "pdf_page_range": [
+        24,
+        32
+      ],
+      "printed_page_range": [
+        14,
+        22
+      ],
+      "chapter_type": "science_expository",
+      "structural_pattern": {
+        "pattern_id": "PAT_SCI_03",
+        "pattern_name": "recall(Newton's first law)->concept via activity(करून पहा)->definition->formula->worked examples(सोडवलेली उदाहरणे)",
+        "pattern_scope": "SUBJECT_SPECIFIC",
+        "evidence": "SUPPORTED_INFERENCE - derived from heading/activity/example order in raw text extraction"
+      },
+      "learning_units": [
+        "संपर्क व असंपर्क बले",
+        "संतुलित व असंतुलित बले",
+        "जडत्व (विराम/गती/दिशेचे जडत्व)",
+        "दाब व्याख्या व सूत्र",
+        "द्रवाचा दाब",
+        "वायूचा दाब",
+        "वातावरणीय दाब",
+        "प्लावक बल व आर्किमिडीजचे तत्त्व",
+        "पदार्थांची घनता व सापेक्ष घनता"
+      ],
+      "key_concepts_defined": [
+        {
+          "concept": "बल",
+          "gloss": "force - vector quantity, unit Newton"
+        },
+        {
+          "concept": "दाब",
+          "gloss": "pressure = force/area, unit Pascal"
+        },
+        {
+          "concept": "जडत्व",
+          "gloss": "inertia, three types: rest, motion, direction"
+        },
+        {
+          "concept": "प्लावक बल",
+          "gloss": "buoyant force, per Archimedes' principle"
+        }
+      ],
+      "pronunciation_risk_terms": [
+        "आर्किमिडिज (287-212 BCE)",
+        "न्यूटनचा गतिविषयक पहिला नियम",
+        "पास्कल (Pa)",
+        "1 bar = 10^5 Pa"
+      ],
+      "visual_and_activity_elements": [
+        {
+          "type": "थोडे आठवा",
+          "topic": "Newton's first law recap",
+          "narration_policy": "READ_DIRECTLY"
+        },
+        {
+          "type": "करून पहा (7+ hands-on activities)",
+          "topic": "magnetic bottles in water tray, box-and-pulley balanced forces, card-and-coin inertia trick, nail/hammer pressure demo, water-pressure bottle experiments, floating/sinking objects, rubber-band Archimedes demo",
+          "narration_policy": "READ_DIRECTLY — procedural, step-numbered"
+        },
+        {
+          "type": "जरा डोके चालवा (6x)",
+          "topic": "reasoning prompts throughout",
+          "narration_policy": "EXPLAIN, pause for reasoning"
+        },
+        {
+          "type": "परिचय शास्त्रज्ञांचा (scientist bio box)",
+          "topic": "Archimedes biography incl. 'Eureka' anecdote",
+          "narration_policy": "READ_THEN_EXPLAIN"
+        },
+        {
+          "type": "सोडविलेली उदाहरणे (5 worked numerical examples)",
+          "topic": "pressure calculations, relative density",
+          "narration_policy": "READ_THEN_EXPLAIN — mathematical speaking style required, not prose style"
+        }
+      ],
+      "assessment": {
+        "fill_blank_count": 4,
+        "matching_count": 1,
+        "short_answer_count": 3,
+        "why_does_this_happen_count": 4,
+        "table_completion_numeric_count": 2,
+        "numerical_problems_count": 3,
+        "activity_projects_count": 1,
+        "types_present": [
+          "रिकाम्या जागी योग्य शब्द",
+          "जोडीदार शोधा",
+          "थोडक्यात उत्तरे",
+          "असे का घडते",
+          "सारणी पूर्ण करा (numeric)",
+          "संख्यात्मक उदाहरणे सोडवा",
+          "उपक्रम"
+        ]
+      },
+      "narration_policy": "READ_THEN_EXPLAIN",
+      "speaking_style": "mathematical/scientific_explanation (formulas and worked examples require the mathematical speaking style: slow, deliberate step enumeration, explicit statement of 'दिलेले'/'सूत्र'/answer — see spec §20 guidance not to treat expressions as prose)",
+      "audience": "STUDENT",
+      "student_relevance": "ESSENTIAL",
+      "cross_chapter_references": [],
+      "source_status": "SOURCE_VERIFIED",
+      "verification_status": "TEACHER_OUTPUT"
+    },
+    {
+      "chapter_id": "CH_04",
+      "chapter_number": 4,
+      "title_marathi": "धाराविद्युत आणि चुंबकत्व",
+      "title_english_gloss": "Current Electricity and Magnetism",
+      "pdf_page_range": [
+        33,
+        37
+      ],
+      "printed_page_range": [
+        23,
+        27
+      ],
+      "chapter_type": "science_expository",
+      "structural_pattern": {
+        "pattern_id": "PAT_SCI_04",
+        "pattern_name": "recall(atomic charge)->concept chain(potential->potential difference->current->cell types)->circuit->electromagnetic effects->applications(bell)",
+        "pattern_scope": "SUBJECT_SPECIFIC",
+        "evidence": "SUPPORTED_INFERENCE - derived from heading/activity/example order in raw text extraction"
+      },
+      "learning_units": [
+        "विद्युतस्थितिक विभव व विभवांतर",
+        "विद्युतप्रवाह (Ampere)",
+        "विद्युतघट: कोरडा घट, लेड-आम्ल घट, निकेल-कॅडमिअम घट, लिथिअम आयन घट",
+        "विद्युत परिपथ व घटांची जोडणी (एकसर बॅटरी)",
+        "धारा विद्युतचे चुंबकीय परिणाम (ओरस्टेड)",
+        "विद्युतचुंबक",
+        "विद्युतघंटा"
+      ],
+      "key_concepts_defined": [
+        {
+          "concept": "विभवांतर",
+          "gloss": "potential difference, unit Volt"
+        },
+        {
+          "concept": "विद्युतप्रवाह",
+          "gloss": "electric current, unit Ampere = Coulomb/second"
+        },
+        {
+          "concept": "विद्युतचुंबक",
+          "gloss": "electromagnet - coil + iron core"
+        }
+      ],
+      "pronunciation_risk_terms": [
+        "हान्स ख्रिस्तिअन ओरस्टेड",
+        "जस्त (Zn)",
+        "मँगेनीज डायऑक्साइड (MnO2)",
+        "शिसे-आम्ल घट (Pb, PbO2)",
+        "लिथिअम आयन घट"
+      ],
+      "visual_and_activity_elements": [
+        {
+          "type": "करून पहा (multiple)",
+          "topic": "simple circuit with dry cell + bulb, dissecting a dead dry cell, compass-needle magnetic effect demo, electromagnet with screw+wire+pins",
+          "narration_policy": "READ_DIRECTLY — lab procedure"
+        },
+        {
+          "type": "शोध घ्या",
+          "topic": "lithium-ion cell research prompt",
+          "narration_policy": "EXCLUDE_FROM_NORMAL_READING"
+        },
+        {
+          "type": "जरा डोके चालवा",
+          "topic": "why 'battery' not 'cell' for car battery",
+          "narration_policy": "EXPLAIN"
+        },
+        {
+          "type": "diagrams 4.1-4.8",
+          "topic": "circuit diagrams, dry cell cross-section, lead-acid cell, cell arrangements, electric bell mechanism",
+          "narration_policy": "ON_DEMAND — diagrams are essential to comprehension, need verified accessibility description"
+        }
+      ],
+      "assessment": {
+        "fill_blank_count": 6,
+        "diagram_wiring_count": 1,
+        "troubleshooting_count": 1,
+        "descriptive_count": 2,
+        "activity_projects_count": 1,
+        "types_present": [
+          "रिकाम्या जागी शब्द भरा (with word bank)",
+          "आकृतीसह तारा जोडणी स्पष्ट करा",
+          "समस्यानिवारण (bulb not lighting)",
+          "रचना/कार्य/उपयुक्तता वर्णन करा (आकृतीसह)",
+          "उपक्रम"
+        ]
+      },
+      "narration_policy": "READ_THEN_EXPLAIN",
+      "speaking_style": "scientific_explanation with procedural sub-style for करून पहा activities",
+      "audience": "STUDENT",
+      "student_relevance": "ESSENTIAL",
+      "cross_chapter_references": [],
+      "source_status": "SOURCE_VERIFIED",
+      "verification_status": "TEACHER_OUTPUT"
+    },
+    {
+      "chapter_id": "CH_05",
+      "chapter_number": 5,
+      "title_marathi": "अणूचे अंतरंग",
+      "title_english_gloss": "Inside the Atom",
+      "pdf_page_range": [
+        38,
+        48
+      ],
+      "printed_page_range": [
+        28,
+        38
+      ],
+      "chapter_type": "science_expository",
+      "structural_pattern": {
+        "pattern_id": "PAT_SCI_05",
+        "pattern_name": "historical-model-sequence: Dalton -> Thomson -> Rutherford -> Bohr, each with model description, evidence/experiment, and limitation motivating the next model; then structure(proton/neutron/electron)->electron configuration->valency->isotopes->nuclear reactor application",
+        "pattern_scope": "SUBJECT_SPECIFIC",
+        "evidence": "SUPPORTED_INFERENCE - derived from heading/activity/example order in raw text extraction"
+      },
+      "learning_units": [
+        "डाल्टनचा अणुसिद्धांत (1803)",
+        "थॉमसनचे प्लम पुडिंग अणुप्रारूप (1904)",
+        "रूदरफोर्डचे केंद्रकीय अणुप्रारूप व विकीरण प्रयोग (1911)",
+        "बोरचे स्थायी कक्षा अणुप्रारूप (1913)",
+        "अणूची संरचना: प्रोटॉन, न्यूट्रॉन, इलेक्ट्रॉन",
+        "इलेक्ट्रॉन वितरण (K,L,M,N कवच, 2n² सूत्र)",
+        "इलेक्ट्रॉन संरूपण व मूलद्रव्यांची संयुजा",
+        "समस्थानिके (isotopes)",
+        "अणुभट्टी व केंद्रकीय विखंडन"
+      ],
+      "key_concepts_defined": [
+        {
+          "concept": "अणुअंक (Z)",
+          "gloss": "atomic number = proton count"
+        },
+        {
+          "concept": "अणुवस्तुमानांक (A)",
+          "gloss": "mass number = proton + neutron count"
+        },
+        {
+          "concept": "समस्थानिके",
+          "gloss": "isotopes - same Z, different A"
+        },
+        {
+          "concept": "अणुभट्टी",
+          "gloss": "nuclear reactor - chain reaction of U-235 fission, moderator+controller+coolant"
+        }
+      ],
+      "pronunciation_risk_terms": [
+        "कणाद मुनी (BCE 6th c.)",
+        "डेमोक्रिटस (BCE 5th c.)",
+        "जॉन डाल्टन (1803)",
+        "जे.जे. थॉमसन (1904)",
+        "अर्नेस्ट रूदरफोर्ड (1911)",
+        "नील्स बोर (1913)",
+        "भाभा अणुसंशोधन केंद्र, मुंबई",
+        "अप्सरा (भारताची पहिली अणुभट्टी, 4 Aug 1956)",
+        "थोरिअम-232",
+        "युरेनिअम-235"
+      ],
+      "visual_and_activity_elements": [
+        {
+          "type": "माहित आहे का तुम्हांला (3x)",
+          "topic": "Kanad Muni & Democritus atomic philosophy, sodium flame color spectroscopy, plum-pudding cake etymology",
+          "narration_policy": "READ_THEN_EXPLAIN"
+        },
+        {
+          "type": "करून पहा (conceptual, ball/laddoo analogy)",
+          "topic": "solid ball vs boondi-laddoo internal structure analogy for Dalton's model",
+          "narration_policy": "READ_DIRECTLY"
+        },
+        {
+          "type": "जरा डोके चालवा (dense, 6+ instances)",
+          "topic": "comparative reasoning across all four atomic models",
+          "narration_policy": "EXPLAIN, invite comparison"
+        },
+        {
+          "type": "diagrams 5.2-5.11",
+          "topic": "Dalton/Thomson/Rutherford/Bohr model diagrams, scattering experiment setup, shell diagrams, nuclear reactor schematic, fission chain reaction",
+          "narration_policy": "ON_DEMAND — high density of essential diagrams, this chapter needs priority visual verification"
+        },
+        {
+          "type": "तक्ता पूर्ण करा (2x)",
+          "topic": "shell capacity 2n² table, electron configuration table for 10 elements",
+          "narration_policy": "READ_THEN_EXPLAIN — computable/deterministic content, ML_target_candidate"
+        }
+      ],
+      "assessment": {
+        "long_answer_count": 4,
+        "scientific_reasoning_count": 4,
+        "definition_count": 5,
+        "diagram_labeling_count": 4,
+        "fill_blank_count": 2,
+        "matching_count": 1,
+        "data_lookup_count": 3,
+        "activity_projects_count": 1,
+        "types_present": [
+          "प्रश्नांची उत्तरे लिहा",
+          "शास्त्रीय कारणे लिहा",
+          "व्याख्या लिहा",
+          "सुबक व नामनिर्देशित आकृती काढा",
+          "रिकाम्या जागा भरा",
+          "जोड्या जुळवा",
+          "दिलेल्या माहितीवरून शोधून काढा",
+          "उपक्रम"
+        ]
+      },
+      "narration_policy": "READ_THEN_EXPLAIN",
+      "speaking_style": "historical_narration blended with scientific_explanation (unique in this book: presents four historical models in sequence like a mini origin-story arc before settling into standard definitional science prose — narration should preserve this chronological-discovery framing rather than flattening to bare facts)",
+      "audience": "STUDENT",
+      "student_relevance": "ESSENTIAL",
+      "cross_chapter_references": [
+        "prerequisite_for: CH_06 (द्रव्याचे संघटन), CH_07 (धातू-अधातू), CH_13 (रासायनिक बदल व रासायनिक बंध) all depend on electron configuration/valency introduced here"
+      ],
+      "source_status": "SOURCE_VERIFIED",
+      "verification_status": "TEACHER_OUTPUT"
+    },
+    {
+      "chapter_id": "CH_06",
+      "chapter_number": 6,
+      "title_marathi": "द्रव्याचे संघटन",
+      "title_english_gloss": "Composition of Matter",
+      "pdf_page_range": [
+        49,
+        58
+      ],
+      "printed_page_range": [
+        39,
+        48
+      ],
+      "chapter_type": "science_expository",
+      "structural_pattern": {
+        "pattern_id": "PAT_SCI_06",
+        "pattern_name": "recall(states of matter)->activity-driven concept building(mustard-seed analogy for particle motion)->classification scheme 1 (states: solid/liquid/gas)->classification scheme 2 (composition: element/compound/mixture)->sub-types (organic/inorganic, solution/suspension/colloid)->molecular formula & valency (criss-cross method)",
+        "pattern_scope": "SUBJECT_SPECIFIC",
+        "evidence": "SUPPORTED_INFERENCE - derived from heading/activity/example order in raw text extraction"
+      },
+      "learning_units": [
+        "स्थायू/द्रव/वायू अवस्था व आंतररेण्वीय बल",
+        "मूलद्रव्य, संयुग, मिश्रण वर्गीकरण",
+        "सेंद्रिय व असेंद्रिय संयुगे",
+        "जटिल संयुगे",
+        "द्रावण, निलंबन, कलिल",
+        "धातू/अधातू/धातुसदृश (introduced, detailed in CH7)",
+        "रेणुसूत्र व संयुजा — तिरकस गुणाकार पद्धत"
+      ],
+      "key_concepts_defined": [
+        {
+          "concept": "प्रावस्था (phase)",
+          "gloss": "phase - uniform-composition portion; समांगी vs विषमांगी mixture"
+        },
+        {
+          "concept": "द्रावण/निलंबन/कलिल",
+          "gloss": "solution/suspension/colloid distinguished by particle diameter (10^-5 to 10^-4 m thresholds)"
+        },
+        {
+          "concept": "तिरकस गुणाकार पद्धत",
+          "gloss": "criss-cross method for deriving molecular formula from valencies — a DETERMINISTIC_RULE_CANDIDATE, fully algorithmic"
+        }
+      ],
+      "pronunciation_risk_terms": [
+        "सेल्युलोज व पेक्टीन (referenced from CH10 cell wall, cross-subject callback)"
+      ],
+      "visual_and_activity_elements": [
+        {
+          "type": "करून पहा (6+ activities)",
+          "topic": "balloon+mustard-seed particle-motion model, hammer test on iron/copper/aluminium/coal, camphor/sugar/urea heating test (organic vs inorganic), sand+water/CuSO4+water/CuSO4+sand mixing, salt/sawdust/milk+water+laser-scatter test, iron filings+sulfur mix vs heat-fused compound",
+          "narration_policy": "READ_DIRECTLY — several require teacher supervision, flagged explicitly (चूर्ण पेट घेऊ शकते — safety note)"
+        },
+        {
+          "type": "माहीत आहे का तुम्हांला (2x)",
+          "topic": "water as compound (fixed 8:1 ratio) vs milk as mixture (variable %)",
+          "narration_policy": "READ_THEN_EXPLAIN"
+        },
+        {
+          "type": "diagrams 6.2-6.4",
+          "topic": "microscopic-level depictions of solid/liquid/gas states, element/compound/mixture",
+          "narration_policy": "ON_DEMAND"
+        },
+        {
+          "type": "step-by-step worked method box",
+          "topic": "5-step criss-cross molecular formula derivation (C+O -> CO2 worked example)",
+          "narration_policy": "READ_THEN_EXPLAIN — procedural/algorithmic, strong ML/deterministic-rule candidate"
+        }
+      ],
+      "assessment": {
+        "mcq_count": 8,
+        "odd_one_out_count": 2,
+        "short_answer_count": 4,
+        "table_classification_count": 1,
+        "examples_count": 8,
+        "criss_cross_practice_count": 1,
+        "activity_projects_count": 1,
+        "types_present": [
+          "MCQ (8 sub-parts)",
+          "गटात न बसणारे पद ओळखा",
+          "प्रश्नांची उत्तरे लिहा",
+          "रासायनिक संघटनावरून प्रकार ठरवा (table)",
+          "प्रत्येकी दोन उदाहरणे द्या",
+          "शास्त्रीय कारणे लिहा",
+          "रेणुसूत्रे तिरकस गुणाकार पद्धतीने शोधा",
+          "उपक्रम"
+        ]
+      },
+      "narration_policy": "READ_THEN_EXPLAIN",
+      "speaking_style": "scientific_explanation with procedural sub-style for the criss-cross method — this specific algorithm is a strong CACHEABLE/DETERMINISTIC artifact distinct from the surrounding conceptual prose",
+      "audience": "STUDENT",
+      "student_relevance": "ESSENTIAL",
+      "cross_chapter_references": [
+        "continues: CH_05 (valency); prerequisite_for: CH_07, CH_13"
+      ],
+      "source_status": "SOURCE_VERIFIED",
+      "verification_status": "TEACHER_OUTPUT"
+    },
+    {
+      "chapter_id": "CH_07",
+      "chapter_number": 7,
+      "title_marathi": "धातू-अधातू",
+      "title_english_gloss": "Metals and Non-metals",
+      "pdf_page_range": [
+        59,
+        63
+      ],
+      "printed_page_range": [
+        49,
+        53
+      ],
+      "chapter_type": "science_expository",
+      "structural_pattern": {
+        "pattern_id": "PAT_SCI_07",
+        "pattern_name": "property-by-property comparison table (physical, then chemical) for metals vs non-metals -> metalloids -> noble metals -> corrosion -> alloys",
+        "pattern_scope": "SUBJECT_SPECIFIC",
+        "evidence": "SUPPORTED_INFERENCE - derived from heading/activity/example order in raw text extraction"
+      },
+      "learning_units": [
+        "धातूंचे भौतिक गुणधर्म (10 properties)",
+        "अधातूंचे भौतिक गुणधर्म",
+        "धातुसदृश",
+        "धातूंचे व अधातूंचे रासायनिक गुणधर्म (electron config, ion formation, oxide/acid/water reactions)",
+        "राजधातू (सोने, चांदी, प्लॅटिनम)",
+        "सोन्याची शुद्धता (कॅरेट)",
+        "क्षरण (corrosion)",
+        "संमिश्रे (alloys: स्टेनलेस स्टील, पितळ, कांस्य)"
+      ],
+      "key_concepts_defined": [
+        {
+          "concept": "क्षरण",
+          "gloss": "corrosion - metal degradation from moisture+air reaction"
+        },
+        {
+          "concept": "संमिश्र",
+          "gloss": "alloy - homogeneous mixture of two or more metals/metal+nonmetal"
+        },
+        {
+          "concept": "कॅरेट",
+          "gloss": "gold purity unit, 24 karat = 100% pure"
+        }
+      ],
+      "pronunciation_risk_terms": [
+        "आर्सेनिक (As)",
+        "सिलिकॉन (Si)",
+        "जर्मेनिअम (Ge)",
+        "अँटिमनी (Sb)",
+        "दिल्ली कुतुबमिनार लोहस्तंभ (~1500 years, corrosion-resistant alloy)",
+        "स्वातंत्र्यदेवतेचा पुतळा (Statue of Liberty, copper patina example)"
+      ],
+      "visual_and_activity_elements": [
+        {
+          "type": "थोडे आठवा (multiple)",
+          "topic": "recall prior classification, sphygmomanometer mercury, cutlery cleaning with lemon",
+          "narration_policy": "READ_DIRECTLY"
+        },
+        {
+          "type": "यादी करा व चर्चा करा (2x)",
+          "topic": "metal/nonmetal daily-use inventory, corrosion examples around home",
+          "narration_policy": "EXCLUDE_FROM_NORMAL_READING — activity, not core narration"
+        },
+        {
+          "type": "माहीत आहे का तुम्हांला (2x)",
+          "topic": "Statue of Liberty patina chemistry, cheap stainless steel copper-substitution cracks",
+          "narration_policy": "READ_THEN_EXPLAIN"
+        },
+        {
+          "type": "chemical equation blocks",
+          "topic": "metal+oxygen, metal-oxide+acid, metal+dilute-acid, ion-formation equations for Na/Mg/Al/Cl/O/N",
+          "narration_policy": "READ_THEN_EXPLAIN — chemistry-equation speaking style: state reactants, arrow as 'yields/produces', products"
+        }
+      ],
+      "assessment": {
+        "table_completion_count": 1,
+        "odd_one_out_count": 1,
+        "scientific_reasoning_count": 3,
+        "short_answer_count": 4,
+        "observation_based_count": 1,
+        "activity_projects_count": 1,
+        "types_present": [
+          "तक्ता पूर्ण करा (properties+uses)",
+          "गटात न बसणारा शब्द ओळखा",
+          "शास्त्रीय कारणे लिहा",
+          "प्रश्नांची उत्तरे द्या",
+          "परीक्षानळी निरीक्षण-आधारित प्रश्न (rusting experiment)",
+          "उपक्रम"
+        ]
+      },
+      "narration_policy": "READ_THEN_EXPLAIN",
+      "speaking_style": "scientific_explanation (property-comparison genre — well suited to a structured two-column narration: metal property, then contrasting nonmetal property)",
+      "audience": "STUDENT",
+      "student_relevance": "ESSENTIAL",
+      "cross_chapter_references": [
+        "continues: CH_05/CH_06 (electron configuration, valency)"
+      ],
+      "source_status": "SOURCE_VERIFIED",
+      "verification_status": "TEACHER_OUTPUT"
+    },
+    {
+      "chapter_id": "CH_08",
+      "chapter_number": 8,
+      "title_marathi": "प्रदूषण",
+      "title_english_gloss": "Pollution",
+      "pdf_page_range": [
+        64,
+        71
+      ],
+      "printed_page_range": [
+        54,
+        61
+      ],
+      "chapter_type": "science_expository",
+      "structural_pattern": {
+        "pattern_id": "PAT_SCI_08",
+        "pattern_name": "define pollution/pollutants -> three-part structure (air/water/soil pollution), each with natural+manmade causes, effects table, and prevention laws",
+        "pattern_scope": "SUBJECT_SPECIFIC",
+        "evidence": "SUPPORTED_INFERENCE - derived from heading/activity/example order in raw text extraction"
+      },
+      "learning_units": [
+        "प्रदूषण व प्रदूषके व्याख्या",
+        "अ. हवा प्रदूषण (नैसर्गिक व मानवनिर्मित कारणे, हवा प्रदूषके सारणी, ओझोन ऱ्हास, हरितगृह परिणाम, आम्लवर्षा, प्रतिबंधात्मक उपाय)",
+        "आ. जल प्रदूषण (जैविक/असेंद्रिय/सेंद्रिय जलप्रदूषके, नैसर्गिक व मानवनिर्मित कारणे, परिणाम)",
+        "इ. मृदा प्रदूषण (कारणे, परिणाम, आंतरसंबंध हवा/जल प्रदूषणाशी)",
+        "प्रदूषण नियंत्रण कायदे (1974, 1981, 1986)"
+      ],
+      "key_concepts_defined": [
+        {
+          "concept": "हरितगृह परिणाम",
+          "gloss": "greenhouse effect - CO2/methane/N2O/CFC trap heat"
+        },
+        {
+          "concept": "आम्लवर्षा",
+          "gloss": "acid rain - SO2/NOx dissolve in rainwater forming acids"
+        },
+        {
+          "concept": "AQI",
+          "gloss": "Air Quality Index - SO2, CO, NO2, ozone, particulates measured daily"
+        }
+      ],
+      "pronunciation_risk_terms": [
+        "लंडन धुके दुर्घटना (5-9 Dec 1952, 3-7 Dec 1962)",
+        "पिट्सबर्ग 'काळे शहर' (1948)",
+        "भोपाळ गॅस दुर्घटना (2 Dec 1984, ~8000 deaths)",
+        "पलार नदी तामिळनाडू ('पझ्झर'/गटार नदी)",
+        "जल प्रदूषण प्रतिबंध व नियंत्रण अधिनियम 1974",
+        "हवा प्रदूषण प्रतिबंध व नियंत्रण अधिनियम 1981",
+        "पर्यावरण संरक्षण अधिनियम 1986"
+      ],
+      "visual_and_activity_elements": [
+        {
+          "type": "निरीक्षण करा (opening image-based prompt)",
+          "topic": "environmental-problems photo composite",
+          "narration_policy": "ON_DEMAND — needs verified visual description"
+        },
+        {
+          "type": "माहीत आहे का तुम्हांला (3x)",
+          "topic": "London smog history, Bhopal gas tragedy (sensitivity flag: mass-casualty industrial disaster, needs factual measured tone per spec's serious-topic guidance), Tamil Nadu tannery pollution",
+          "narration_policy": "READ_THEN_EXPLAIN — Bhopal item flagged SENSITIVE"
+        },
+        {
+          "type": "करून पहा (survey activity)",
+          "topic": "student self-survey of local pollution",
+          "narration_policy": "EXCLUDE_FROM_NORMAL_READING"
+        },
+        {
+          "type": "diagram 8.2 'माझ्या लेकरांनो! मला वाचवा!' (illustrative/emotive image)",
+          "topic": "environmental appeal illustration",
+          "narration_policy": "ON_DEMAND"
+        }
+      ],
+      "assessment": {
+        "classification_count": 1,
+        "case_study_paragraph_count": 1,
+        "matching_count": 1,
+        "true_false_count": 2,
+        "short_answer_count": 6,
+        "slogan_writing_count": 1,
+        "sorting_count": 1,
+        "activity_projects_count": 2,
+        "types_present": [
+          "प्रदूषणाचा प्रकार ओळखा",
+          "परिच्छेद-आधारित प्रश्न (Nilesh case study)",
+          "जोड्या लावा (pollutant->health effect)",
+          "चूक की बरोबर",
+          "प्रश्नांची उत्तरे द्या",
+          "घोष वाक्ये तयार करा (slogans)",
+          "मानवनिर्मित/निसर्गनिर्मित वर्गीकरण",
+          "उपक्रम"
+        ]
+      },
+      "narration_policy": "READ_THEN_EXPLAIN",
+      "speaking_style": "scientific_explanation / explanatory_teacher (Bhopal and London-smog historical-disaster boxes need the same measured, non-dramatized delivery flagged for History chapters covering violence/tragedy)",
+      "audience": "STUDENT",
+      "student_relevance": "ESSENTIAL",
+      "cross_chapter_references": [],
+      "source_status": "SOURCE_VERIFIED",
+      "verification_status": "TEACHER_OUTPUT"
+    },
+    {
+      "chapter_id": "CH_09",
+      "chapter_number": 9,
+      "title_marathi": "आपत्ती व्यवस्थापन",
+      "title_english_gloss": "Disaster Management",
+      "pdf_page_range": [
+        72,
+        76
+      ],
+      "printed_page_range": [
+        62,
+        66
+      ],
+      "chapter_type": "science_expository",
+      "structural_pattern": {
+        "pattern_id": "PAT_SCI_09",
+        "pattern_name": "phenomenon definition -> causes -> effects -> safety dos/don'ts -> institutional/technical response, repeated for earthquake/fire/landslide; closes with school disaster-management-plan template",
+        "pattern_scope": "SUBJECT_SPECIFIC",
+        "evidence": "SUPPORTED_INFERENCE - derived from heading/activity/example order in raw text extraction"
+      },
+      "learning_units": [
+        "भूकंप (कारणे, परिणाम, भूकंपरोधक इमारती, घ्यायची दक्षता)",
+        "आग (5 प्रकार अ-इ वर्गीय, विझविण्याच्या पद्धती, प्रथमोपचार)",
+        "दरड कोसळणे/भूस्खलन (कारणे, परिणाम)",
+        "शाळेचा आपत्ती निवारण नियोजन आराखडा (template)",
+        "कार्यरत संस्था (NCS, इ.)"
+      ],
+      "key_concepts_defined": [
+        {
+          "concept": "भूकंपाचा केंद्रबिंदू",
+          "gloss": "earthquake epicenter"
+        },
+        {
+          "concept": "रिश्टर स्केल",
+          "gloss": "Richter scale for earthquake magnitude"
+        },
+        {
+          "concept": "आगीचे वर्ग (अ-इ)",
+          "gloss": "five fire classes by fuel type: solid/liquid/gas/chemical-metal/electrical"
+        }
+      ],
+      "pronunciation_risk_terms": [
+        "National Earthquakes Information Centre (12,400-14,000 quakes/year globally)",
+        "माळीण दुर्घटना, पुणे जिल्हा (landslide disaster)",
+        "IS 456, IS 1893, IS 13920 (Indian earthquake-resistant construction codes)",
+        "राष्ट्रीय भूकंपशास्त्र संस्था (NCS)"
+      ],
+      "visual_and_activity_elements": [
+        {
+          "type": "माहीत आहे का तुम्हांला (annual earthquake statistics box)",
+          "topic": "global earthquake frequency",
+          "narration_policy": "READ_THEN_EXPLAIN"
+        },
+        {
+          "type": "diagram 9.1/9.4",
+          "topic": "cracked buildings photo, earthquake safety-posture illustrations (अ/आ/इ sequence)",
+          "narration_policy": "ON_DEMAND — safety-posture images are practically important, prioritize for accessibility description"
+        },
+        {
+          "type": "काळजी व सुरक्षात्मक उपाय (safety checklist box)",
+          "topic": "fire safety dos/don'ts",
+          "narration_policy": "READ_DIRECTLY — life-safety content, should be prioritized narration not buried"
+        },
+        {
+          "type": "large fillable table: school disaster plan template",
+          "topic": "school info, committee, building details, risk map etc.",
+          "narration_policy": "ON_DEMAND / interactive-use, not linear narration"
+        }
+      ],
+      "assessment": {
+        "long_answer_count": 5,
+        "scientific_reasoning_count": 4,
+        "survey_task_count": 2,
+        "role_response_count": 1,
+        "sorting_count": 1,
+        "activity_projects_count": 4,
+        "types_present": [
+          "प्रश्नांची उत्तरे तुमच्या शब्दांत लिहा",
+          "शास्त्रीय कारणे द्या",
+          "सर्वेक्षण करा",
+          "चित्राधारित भूमिका प्रश्न",
+          "मानवनिर्मित/निसर्गनिर्मित वर्गीकरण",
+          "उपक्रम"
+        ]
+      },
+      "narration_policy": "READ_THEN_EXPLAIN",
+      "speaking_style": "instructional (safety-procedure content — dos/don'ts lists warrant a distinct, clear, unhurried instructional delivery given life-safety stakes; content is directly actionable, high spoken_priority: IMMEDIATE for the safety-checklist portions specifically)",
+      "audience": "STUDENT",
+      "student_relevance": "ESSENTIAL",
+      "cross_chapter_references": [],
+      "source_status": "SOURCE_VERIFIED",
+      "verification_status": "TEACHER_OUTPUT"
+    },
+    {
+      "chapter_id": "CH_10",
+      "chapter_number": 10,
+      "title_marathi": "पेशी व पेशीअंगके",
+      "title_english_gloss": "Cell and Cell Organelles",
+      "pdf_page_range": [
+        77,
+        84
+      ],
+      "printed_page_range": [
+        67,
+        74
+      ],
+      "chapter_type": "science_expository",
+      "structural_pattern": {
+        "pattern_id": "PAT_SCI_10",
+        "pattern_name": "comparison table setup(plant vs animal cell)->part-by-part organelle catalogue, each with structure+function+diagram, roughly in size/discovery order",
+        "pattern_scope": "SUBJECT_SPECIFIC",
+        "evidence": "SUPPORTED_INFERENCE - derived from heading/activity/example order in raw text extraction"
+      },
+      "learning_units": [
+        "पेशीभित्तिका, प्रद्रव्यपटल (निवडक्षम पारपटल)",
+        "विसरण व परासरण (समपरासारी/अवपरासारी/अतिपरासारी, रससंकोच)",
+        "पेशीद्रव्य",
+        "केंद्रक (केंद्रकी, रंगसूत्रे, जनुके)",
+        "आंतर्द्रव्यजालिका",
+        "गॉल्गी संकुल",
+        "लयकारिका",
+        "तंतुकणिका (ATP निर्मिती)",
+        "रिक्तिका",
+        "लवके (हरितलवक, वर्णलवक, अवर्णलवक)",
+        "दृश्यकेंद्रकी vs आदिकेंद्रकी पेशी तुलना"
+      ],
+      "key_concepts_defined": [
+        {
+          "concept": "परासरण",
+          "gloss": "osmosis - water movement across selectively permeable membrane, 3 cases (iso/hypo/hyper-tonic)"
+        },
+        {
+          "concept": "समस्थिती",
+          "gloss": "homeostasis - maintained by plasma membrane"
+        },
+        {
+          "concept": "ATP",
+          "gloss": "adenosine triphosphate, energy currency produced by mitochondria"
+        }
+      ],
+      "pronunciation_risk_terms": [
+        "कॅमिलिओ गॉल्गी (Golgi complex discoverer, developed 'काळी अभिक्रिया' staining technique)",
+        "सँटियागो काजल (shared 1906 Nobel Prize with Golgi for नervous-system study)",
+        "राष्ट्रीय पेशी विज्ञान केंद्र, पुणे (NCCS)"
+      ],
+      "visual_and_activity_elements": [
+        {
+          "type": "निरीक्षण करा (comparison table fill-in, plant vs animal cell parts)",
+          "topic": "cell-part presence/absence table",
+          "narration_policy": "READ_THEN_EXPLAIN"
+        },
+        {
+          "type": "करून पहा (2x)",
+          "topic": "onion-peel + methylene blue microscopy for nucleus, raisin osmosis experiment",
+          "narration_policy": "READ_DIRECTLY"
+        },
+        {
+          "type": "शोध घ्या",
+          "topic": "raisin-in-water vs raisin-in-sugar-solution osmosis observation",
+          "narration_policy": "READ_DIRECTLY"
+        },
+        {
+          "type": "परिचय शास्त्रज्ञांचा",
+          "topic": "Camillo Golgi biography + Nobel Prize",
+          "narration_policy": "READ_THEN_EXPLAIN"
+        },
+        {
+          "type": "diagrams 10.1-10.13 (very high density, ~13 labeled diagrams)",
+          "topic": "plant/animal cell, cell wall structure, plasma membrane structure, osmosis types, onion peel cells, nucleus, ER, Golgi complex, lysosome, mitochondria, vacuole",
+          "narration_policy": "ON_DEMAND — highest diagram density chapter in the book; PRIORITY for visual accessibility pass"
+        }
+      ],
+      "assessment": {
+        "riddle_id_count": 5,
+        "counterfactual_count": 5,
+        "odd_one_out_count": 2,
+        "function_writing_count": 5,
+        "matching_color_pigment_count": 1,
+        "activity_projects_count": 3,
+        "types_present": [
+          "मला ओळखा (riddle-style organelle ID)",
+          "तर काय झाले असते (counterfactual reasoning)",
+          "आमच्यामध्ये वेगळा कोण (odd-one-out+reason)",
+          "कार्ये लिहा",
+          "माझा रंग कोणामुळे (pigment matching)",
+          "उपक्रम"
+        ]
+      },
+      "narration_policy": "READ_THEN_EXPLAIN",
+      "speaking_style": "scientific_explanation (biology-organelle catalogue genre; each organelle sub-section follows structure->function pattern suited to a consistent template-narration)",
+      "audience": "STUDENT",
+      "student_relevance": "ESSENTIAL",
+      "cross_chapter_references": [],
+      "source_status": "SOURCE_VERIFIED",
+      "verification_status": "TEACHER_OUTPUT"
+    },
+    {
+      "chapter_id": "CH_11",
+      "chapter_number": 11,
+      "title_marathi": "मानवी शरीर व इंद्रिय संस्था",
+      "title_english_gloss": "Human Body and Organ Systems",
+      "pdf_page_range": [
+        85,
+        92
+      ],
+      "printed_page_range": [
+        75,
+        82
+      ],
+      "chapter_type": "science_expository",
+      "structural_pattern": {
+        "pattern_id": "PAT_SCI_11",
+        "pattern_name": "life-process framing -> respiratory system (structure then function then gas exchange) -> circulatory system (heart->vessels->blood->blood groups->blood pressure), each subsystem: recall->structure diagram->function->'माहीत आहे का'/'सांगा पाहू' interleaved",
+        "pattern_scope": "SUBJECT_SPECIFIC",
+        "evidence": "SUPPORTED_INFERENCE - derived from heading/activity/example order in raw text extraction"
+      },
+      "learning_units": [
+        "जीवनप्रक्रिया व इंद्रिय संस्था",
+        "श्वसन: बहिःश्वसन, अंतःश्वसन, पेशीश्वसन",
+        "श्वसन संस्था रचना (नाक->घसा->श्वासनलिका->फुफ्फुस->श्वासपटल)",
+        "रक्ताभिसरण संस्था: हृदय रचना (4 कप्पे), रक्तवाहिन्या (धमन्या/नीला/केशवाहिन्या)",
+        "रक्त (रक्तद्रव + रक्तकणिका: RBC/WBC/प्लेटलेट्स)",
+        "रक्ताची कार्ये (8 functions)",
+        "मानवी रक्तगट (A,B,AB,O x Rh)",
+        "रक्तदान",
+        "रक्तदाब (सिस्टॉलिक/डायस्टॉलिक)"
+      ],
+      "key_concepts_defined": [
+        {
+          "concept": "बहिःश्वसन vs अंतःश्वसन vs पेशीश्वसन",
+          "gloss": "three-tier breathing/respiration terminology distinct from lay 'breathing'"
+        },
+        {
+          "concept": "सर्वयोग्य दाता / सर्वयोग्य ग्राही",
+          "gloss": "O = universal donor, AB = universal recipient"
+        },
+        {
+          "concept": "रक्तदाब",
+          "gloss": "blood pressure - systolic/diastolic, measured with sphygmomanometer"
+        }
+      ],
+      "pronunciation_risk_terms": [
+        "विल्यम हार्वे (1628, circulation theory)",
+        "डॉ. कार्ल लँडस्टेनर (1900, A/B/O blood groups, Nobel 1930)",
+        "डिकास्टेलो व स्टर्ली (1902, AB blood group)"
+      ],
+      "visual_and_activity_elements": [
+        {
+          "type": "थोडे आठवा / सांगा पाहू (dense interleaving throughout)",
+          "topic": "life-process recall prompts",
+          "narration_policy": "READ_DIRECTLY"
+        },
+        {
+          "type": "करून पहा (stethoscope-substitute heartbeat-counting activity)",
+          "topic": "DIY funnel-and-tube heart-sound listening device",
+          "narration_policy": "READ_DIRECTLY"
+        },
+        {
+          "type": "माहीत आहे का तुम्हांला (3x)",
+          "topic": "average heart rate 72bpm, blood donation facts, hematology field definition",
+          "narration_policy": "READ_THEN_EXPLAIN"
+        },
+        {
+          "type": "असे होऊन गेले (historical vignette box)",
+          "topic": "William Harvey's 1628 discovery narrative",
+          "narration_policy": "READ_THEN_EXPLAIN"
+        },
+        {
+          "type": "diagrams 11.1-11.6",
+          "topic": "respiratory system + alveoli, heart cross-section, artery/vein structure, capillaries, BP measuring device",
+          "narration_policy": "ON_DEMAND"
+        }
+      ],
+      "assessment": {
+        "matching_count": 1,
+        "table_fill_count": 1,
+        "diagram_labeling_count": 2,
+        "scientific_reasoning_count": 4,
+        "difference_count": 2,
+        "criteria_listing_count": 1,
+        "fill_blank_word_bank_count": 1,
+        "odd_one_out_count": 4,
+        "case_study_diagnosis_count": 1,
+        "activity_projects_count": 1,
+        "types_present": [
+          "जोडीदार शोधा",
+          "तक्ता पूर्ण करा (systems->organs->functions)",
+          "नामनिर्देशित सुबक आकृत्या काढा",
+          "सकारण स्पष्ट करा",
+          "प्रश्नांची उत्तरे लिहा",
+          "फरक स्पष्ट करा",
+          "रिकाम्या जागा भरा (word bank)",
+          "आमच्यातील वेगळे कोण",
+          "उतारा वाचून रोग/विकार ओळखा (diagnostic case)",
+          "उपक्रम"
+        ]
+      },
+      "narration_policy": "READ_THEN_EXPLAIN",
+      "speaking_style": "scientific_explanation / historical_narration hybrid (the 'असे होऊन गेले' Harvey box briefly switches to historical_narration style mid-chapter — flag for narration-engine style-switching capability)",
+      "audience": "STUDENT",
+      "student_relevance": "ESSENTIAL",
+      "cross_chapter_references": [],
+      "source_status": "SOURCE_VERIFIED",
+      "verification_status": "TEACHER_OUTPUT"
+    },
+    {
+      "chapter_id": "CH_12",
+      "chapter_number": 12,
+      "title_marathi": "आम्ल, आम्लारी ओळख",
+      "title_english_gloss": "Identification of Acids and Bases",
+      "pdf_page_range": [
+        93,
+        98
+      ],
+      "printed_page_range": [
+        83,
+        88
+      ],
+      "chapter_type": "science_expository",
+      "structural_pattern": {
+        "pattern_id": "PAT_SCI_12",
+        "pattern_name": "sensory/experiential intro (taste) -> caution against tasting -> indicator concept -> lab indicators table -> DIY natural-indicator activity -> definitions (H+/OH- ion based) -> properties -> uses -> neutralization",
+        "pattern_scope": "SUBJECT_SPECIFIC",
+        "evidence": "SUPPORTED_INFERENCE - derived from heading/activity/example order in raw text extraction"
+      },
+      "learning_units": [
+        "आम्ल व आम्लारी व्याख्या (चव-आधारित परिचय, नंतर H+/OH- आयन व्याख्या)",
+        "दर्शक (लिटमस, फिनॉल्फ्थॅलिन, मिथिल ऑरेंज, मिथिल रेड)",
+        "घरगुती/नैसर्गिक दर्शक (हळद, जास्वंद, गुलाब, लाल कोबी)",
+        "आम्लाचे गुणधर्म व उपयोग",
+        "आम्लारीचे गुणधर्म व उपयोग",
+        "उदासिनीकरण (neutralization)"
+      ],
+      "key_concepts_defined": [
+        {
+          "concept": "दर्शक (Indicator)",
+          "gloss": "substance that changes color on contact with acid/base — explicit safety rationale given: never taste/smell/touch unknown chemicals"
+        },
+        {
+          "concept": "उदासिनीकरण",
+          "gloss": "neutralization: acid + base -> salt + water"
+        }
+      ],
+      "pronunciation_risk_terms": [
+        "हायड्रोक्लोरिक आम्ल (HCl)",
+        "नायट्रिक आम्ल (HNO3)",
+        "सल्फ्युरिक आम्ल (H2SO4)",
+        "कार्बोनिक आम्ल (H2CO3)",
+        "ॲसिटिक आम्ल (व्हिनेगर)",
+        "सायट्रिक आम्ल (लिंबू)",
+        "टार्टारिक आम्ल (चिंच)",
+        "लॅक्टिक आम्ल (दही)",
+        "सोडिअम हायड्रॉक्साइड (कॉस्टिक सोडा)",
+        "कॅल्शिअम हायड्रॉक्साइड (चुन्याची निवळी)",
+        "मिल्क ऑफ मॅग्नेशिआ (Mg(OH)2)"
+      ],
+      "visual_and_activity_elements": [
+        {
+          "type": "करून पहा (natural indicator DIY, 2x)",
+          "topic": "preparing hibiscus/rose/turmeric/red-cabbage indicator paper strips; baking-soda solution fizz test on fruit juices",
+          "narration_policy": "READ_DIRECTLY — includes explicit teacher-supervision note"
+        },
+        {
+          "type": "हे नेहमी लक्षात ठेवा (safety warning box)",
+          "topic": "never taste/smell/touch unknown substance to identify it — SAFETY CRITICAL",
+          "narration_policy": "READ_DIRECTLY — flag IMMEDIATE spoken_priority, this is life-safety content"
+        },
+        {
+          "type": "माहीत आहे का तुम्हांला (2x)",
+          "topic": "concentrated sulfuric acid dilution danger (never add water to acid — explosion risk), stomach HCl and antacid mechanism",
+          "narration_policy": "READ_THEN_EXPLAIN — first item is SAFETY CRITICAL"
+        },
+        {
+          "type": "tables 12.2, 12.4, 12.6",
+          "topic": "indicator color-change table, natural acid sources table, base formulas+uses table",
+          "narration_policy": "READ_THEN_EXPLAIN"
+        }
+      ],
+      "assessment": {
+        "identification_count": 1,
+        "formula_naming_count": 1,
+        "reasoning_count": 2,
+        "short_answer_count": 3,
+        "fill_blank_count": 3,
+        "matching_count": 1,
+        "true_false_count": 4,
+        "classification_count": 1,
+        "activity_projects_count": 1,
+        "types_present": [
+          "द्रावणे आम्ल/आम्लारी ओळखा (indicator-result table)",
+          "सूत्रांवरून रासायनिक नावे लिहा",
+          "प्रश्नांची उत्तरे लिहा",
+          "रिकाम्या जागा भरा",
+          "जोड्या लावा",
+          "चूक की बरोबर",
+          "आम्लधर्मी/आम्लारीधर्मी/उदासीन वर्गीकरण",
+          "उपक्रम"
+        ]
+      },
+      "narration_policy": "READ_THEN_EXPLAIN",
+      "speaking_style": "scientific_explanation with an explicit SAFETY-INSTRUCTIONAL sub-style for the 'never taste/smell chemicals' and 'never add water to concentrated acid' passages — these should be marked IMMEDIATE narration priority regardless of general chapter narration policy",
+      "audience": "STUDENT",
+      "student_relevance": "ESSENTIAL",
+      "cross_chapter_references": [],
+      "source_status": "SOURCE_VERIFIED",
+      "verification_status": "TEACHER_OUTPUT"
+    },
+    {
+      "chapter_id": "CH_13",
+      "chapter_number": 13,
+      "title_marathi": "रासायनिक बदल व रासायनिक बंध",
+      "title_english_gloss": "Chemical Change and Chemical Bonds",
+      "pdf_page_range": [
+        99,
+        104
+      ],
+      "printed_page_range": [
+        89,
+        94
+      ],
+      "chapter_type": "science_expository",
+      "structural_pattern": {
+        "pattern_id": "PAT_SCI_13",
+        "pattern_name": "recall(physical vs chemical change)->activity-driven identification of chemical change->word-equation/chemical-equation convention->catalogue of natural & man-made chemical changes(each with word eq + chemical eq)->chemical bonding theory(ionic then covalent) with electron-configuration diagrams",
+        "pattern_scope": "SUBJECT_SPECIFIC",
+        "evidence": "SUPPORTED_INFERENCE - derived from heading/activity/example order in raw text extraction"
+      },
+      "learning_units": [
+        "रासायनिक बदल ओळखण्याचे निकष",
+        "शाब्दिक समीकरण व रासायनिक समीकरण लेखन पद्धत",
+        "नैसर्गिक रासायनिक बदल: श्वसन, प्रकाशसंश्लेषण",
+        "मानवनिर्मित रासायनिक बदल: इंधन ज्वलन, फरशी स्वच्छता, दुष्फेन पाणी सुफेन करणे",
+        "रासायनिक बंध: आयनिक बंध (उदा. NaCl, MgCl2)",
+        "सहसंयुज बंध (उदा. H2, H2O)"
+      ],
+      "key_concepts_defined": [
+        {
+          "concept": "अभिकारक/उत्पादित",
+          "gloss": "reactants (left of arrow) / products (right of arrow) in a chemical equation"
+        },
+        {
+          "concept": "आयनिक बंध",
+          "gloss": "ionic bond - electron transfer, electrostatic attraction between cation/anion"
+        },
+        {
+          "concept": "सहसंयुज बंध",
+          "gloss": "covalent bond - electron sharing between similar atoms"
+        }
+      ],
+      "pronunciation_risk_terms": [
+        "सायट्रिक आम्ल + सोडिअम बायकार्बोनेट (lemon-soda fizz reaction example)",
+        "कॅल्शिअम कार्बोनेट (चुन्याची निवळी / शहाबादी फरशी)"
+      ],
+      "visual_and_activity_elements": [
+        {
+          "type": "करून पहा (2x)",
+          "topic": "taste-testing lemon juice+baking soda reaction (with explicit safety caveat about when tasting is/isn't safe), blowing CO2 through lime water to observe milkiness",
+          "narration_policy": "READ_DIRECTLY, first activity has an explicit caution note about the conditions under which taste-testing is acceptable — narrate the caveat, don't drop it"
+        },
+        {
+          "type": "diagrams 13.3-13.6",
+          "topic": "NaCl ionic-bond electron-transfer diagram, MgCl2 formation, H2 covalent-bond formation, H2O covalent-bond formation",
+          "narration_policy": "ON_DEMAND — essential to understanding bond formation, not decorative"
+        }
+      ],
+      "assessment": {
+        "fill_blank_word_bank_count": 10,
+        "word_equation_writing_count": 4,
+        "matching_count": 1,
+        "electron_diagram_drawing_count": 4,
+        "activity_projects_count": 1,
+        "types_present": [
+          "रिकाम्या जागी योग्य पद भरा (word bank)",
+          "शाब्दिक समीकरण लिहून स्पष्ट करा",
+          "जोड्या जुळवा",
+          "इलेक्ट्रॉन संरूपणाच्या रेखाटनाने संयुगनिर्मिती दर्शवा",
+          "उपक्रम"
+        ]
+      },
+      "narration_policy": "READ_THEN_EXPLAIN",
+      "speaking_style": "scientific_explanation (chemical-equation speaking style required for word/chemical equations: reactant names, then explicit 'यीएल्ड्स'/उत्पादित transition, then product names — mirrors CH_07's equation-narration need)",
+      "audience": "STUDENT",
+      "student_relevance": "ESSENTIAL",
+      "cross_chapter_references": [
+        "continues: CH_05 (electron configuration), CH_06 (valency, molecular formula)"
+      ],
+      "source_status": "SOURCE_VERIFIED",
+      "verification_status": "TEACHER_OUTPUT"
+    },
+    {
+      "chapter_id": "CH_14",
+      "chapter_number": 14,
+      "title_marathi": "उष्णतेचे मापन व परिणाम",
+      "title_english_gloss": "Measurement and Effects of Heat",
+      "pdf_page_range": [
+        105,
+        113
+      ],
+      "printed_page_range": [
+        95,
+        103
+      ],
+      "chapter_type": "science_expository",
+      "structural_pattern": {
+        "pattern_id": "PAT_SCI_14",
+        "pattern_name": "definition(heat vs temperature)->sources of heat catalogue->activity-driven concept(relative sensation)->kinetic theory link->units & conversion formulas->instruments(thermometer types)->specific heat & calorimeter->expansion(linear/planar/volumetric, solid/liquid/gas), each sub-topic followed by worked numerical examples",
+        "pattern_scope": "SUBJECT_SPECIFIC",
+        "evidence": "SUPPORTED_INFERENCE - derived from heading/activity/example order in raw text extraction"
+      },
+      "learning_units": [
+        "उष्णतेचे स्रोत (सूर्य, पृथ्वी, रासायनिक, विद्युत, अणुऊर्जा, हवा)",
+        "तापमान वि. उष्णता (गतिज ऊर्जा आधारित स्पष्टीकरण)",
+        "सेल्सिअस/फॅरेनहाईट/केल्व्हिन रूपांतरण सूत्र",
+        "तापमापीचे प्रकार (वैद्यकीय, डिजिटल, कमाल-किमान)",
+        "विशिष्ट उष्मा व कॅलरीमापी",
+        "प्रसरण: एकरेषीय, प्रतलीय, घनीय (स्थायू/द्रव/वायू)"
+      ],
+      "key_concepts_defined": [
+        {
+          "concept": "विशिष्ट उष्मा",
+          "gloss": "specific heat c, Q = mc(Tf-Ti)"
+        },
+        {
+          "concept": "प्रसरणांक",
+          "gloss": "coefficient of expansion (linear λ, planar σ, volumetric β) — each with its own formula and unit"
+        },
+        {
+          "concept": "कॅलरीमापी",
+          "gloss": "calorimeter - device to measure heat via Q_object = Q_water + Q_calorimeter"
+        }
+      ],
+      "pronunciation_risk_terms": [
+        "1 cal = 4.18 J",
+        "पाण्याचा उत्कलन बिंदू 100°C/212°F/373K",
+        "The Great Belt Bridge, Denmark (18km, expands 4.7m in summer)"
+      ],
+      "visual_and_activity_elements": [
+        {
+          "type": "करून पहा (3x)",
+          "topic": "relative-sensation three-bowl experiment, equal-heating-time comparison of different water masses, funnel-stethoscope reused from CH11",
+          "narration_policy": "READ_DIRECTLY"
+        },
+        {
+          "type": "सोडवलेली उदाहरणे (8 worked numerical examples across the chapter)",
+          "topic": "heat-energy, temperature-conversion, calorimetry, linear-expansion calculations",
+          "narration_policy": "READ_THEN_EXPLAIN — mathematical speaking style mandatory"
+        },
+        {
+          "type": "tables",
+          "topic": "temperature-unit conversion reference table, specific-heat-by-material table, expansion-coefficient-by-material table",
+          "narration_policy": "READ_THEN_EXPLAIN, ON_DEMAND for full data lookup"
+        },
+        {
+          "type": "माहीत आहे का तुम्हांला",
+          "topic": "rail-gap thermal-expansion engineering, bridge expansion example",
+          "narration_policy": "READ_THEN_EXPLAIN"
+        }
+      ],
+      "assessment": {
+        "matching_count": 1,
+        "true_false_count": 6,
+        "fill_blank_count": 4,
+        "numerical_problems_count": 5,
+        "descriptive_count": 5,
+        "activity_projects_count": 1,
+        "types_present": [
+          "माझी जोडी कोणाशी (matching)",
+          "कोण खरं बोलतोय (T/F)",
+          "शोधाल तर सापडेल (fill-blank)",
+          "उदाहरणे सोडवा (numerical, 5 problems with worked answers)",
+          "थोडक्यात उत्तरे द्या",
+          "उपक्रम"
+        ]
+      },
+      "narration_policy": "READ_THEN_EXPLAIN",
+      "speaking_style": "mathematical (heaviest formula/numerical-example density of any Science chapter so far — narration MUST use the distinct mathematical_narration sub-style throughout, not general scientific_explanation)",
+      "audience": "STUDENT",
+      "student_relevance": "ESSENTIAL",
+      "cross_chapter_references": [],
+      "source_status": "SOURCE_VERIFIED",
+      "verification_status": "TEACHER_OUTPUT"
+    },
+    {
+      "chapter_id": "CH_15",
+      "chapter_number": 15,
+      "title_marathi": "ध्वनी",
+      "title_english_gloss": "Sound",
+      "pdf_page_range": [
+        114,
+        119
+      ],
+      "printed_page_range": [
+        104,
+        109
+      ],
+      "chapter_type": "science_expository",
+      "structural_pattern": {
+        "pattern_id": "PAT_SCI_15",
+        "pattern_name": "phenomenon via physical model(tuning fork compression/rarefaction)->propagation & medium requirement (vacuum-bell-jar experiment)->frequency concept->musical application->human voice production->loudspeaker mechanism, each stage with a hands-on 'करून पहा'",
+        "pattern_scope": "SUBJECT_SPECIFIC",
+        "evidence": "SUPPORTED_INFERENCE - derived from heading/activity/example order in raw text extraction"
+      },
+      "learning_units": [
+        "ध्वनीची निर्मिती (नादकाटा, संपीडन/विरलन)",
+        "ध्वनी प्रसारण आणि माध्यम (निर्वात हंडी प्रयोग)",
+        "ध्वनी तरंगांची वारंवारिता (Hz)",
+        "ध्वनी आणि संगीत (तंतुवाद्य/फुंकवाद्य)",
+        "मानवनिर्मित ध्वनी (स्वरयंत्र, स्वरतंतू)",
+        "ध्वनिक्षेपकापासून ध्वनी निर्मिती (electromagnet-driven diaphragm)"
+      ],
+      "key_concepts_defined": [
+        {
+          "concept": "संपीडन/विरलन",
+          "gloss": "compression/rarefaction - high/low pressure regions in a sound wave"
+        },
+        {
+          "concept": "वारंवारिता",
+          "gloss": "frequency, unit Hertz - cycles per second"
+        }
+      ],
+      "pronunciation_risk_terms": [
+        "नादकाटा (tuning fork)",
+        "स्वरयंत्र (larynx)",
+        "स्वरतंतू (vocal cords, ~20mm men / ~15mm women)"
+      ],
+      "visual_and_activity_elements": [
+        {
+          "type": "करून पहा (4x)",
+          "topic": "tuning-fork vibration demo, water-glass xylophone (frequency vs water level), rubber-band vocal-cord analogy, DIY paper-cup string-telephone",
+          "narration_policy": "READ_DIRECTLY"
+        },
+        {
+          "type": "हे नेहमी लक्षात ठेवा (astronaut vacuum box)",
+          "topic": "moon astronauts cannot hear each other directly — no medium for sound propagation",
+          "narration_policy": "READ_THEN_EXPLAIN"
+        },
+        {
+          "type": "diagrams 15.1-15.6",
+          "topic": "tuning fork structure, compression/rarefaction wave diagram, vacuum bell-jar apparatus, cycle diagram, human larynx cross-section, loudspeaker cross-section",
+          "narration_policy": "ON_DEMAND"
+        },
+        {
+          "type": "table: सप्त सुरांच्या वारंवारिता",
+          "topic": "sa-re-ga-ma-pa-dha-ni frequency table (256-480 Hz) — culturally specific to Indian classical music, worth flagging for musical/cultural narration nuance",
+          "narration_policy": "READ_DIRECTLY"
+        }
+      ],
+      "assessment": {
+        "fill_blank_count": 5,
+        "scientific_reasoning_count": 3,
+        "matching_count": 1,
+        "descriptive_count": 2,
+        "activity_projects_count": 2,
+        "types_present": [
+          "रिकाम्या जागी योग्य शब्द भरा",
+          "शास्त्रीय कारणे सांगा",
+          "प्रश्न (तंतुवाद्य/फुंकवाद्य स्वरनिर्मिती)",
+          "योग्य जोड्या जुळवा",
+          "प्रयोग आकृतीसह स्पष्ट करा",
+          "उपक्रम"
+        ]
+      },
+      "narration_policy": "READ_THEN_EXPLAIN",
+      "speaking_style": "scientific_explanation (physical-model-driven; the tuning-fork compression/rarefaction explanation is highly sequential and benefits from a step-paced delivery matching the diagram sequence)",
+      "audience": "STUDENT",
+      "student_relevance": "ESSENTIAL",
+      "cross_chapter_references": [],
+      "source_status": "SOURCE_VERIFIED",
+      "verification_status": "TEACHER_OUTPUT"
+    },
+    {
+      "chapter_id": "CH_16",
+      "chapter_number": 16,
+      "title_marathi": "प्रकाशाचे परावर्तन",
+      "title_english_gloss": "Reflection of Light",
+      "pdf_page_range": [
+        120,
+        125
+      ],
+      "printed_page_range": [
+        110,
+        115
+      ],
+      "chapter_type": "science_expository",
+      "structural_pattern": {
+        "pattern_id": "PAT_SCI_16",
+        "pattern_name": "sensory hook(dark room light-switch activity)->definition->terminology(incident/reflected ray, angle)->laws of reflection->verification activity->regular vs irregular reflection->reflection-of-reflection applications(kaleidoscope, periscope)->worked geometry examples",
+        "pattern_scope": "SUBJECT_SPECIFIC",
+        "evidence": "SUPPORTED_INFERENCE - derived from heading/activity/example order in raw text extraction"
+      },
+      "learning_units": [
+        "प्रकाशाचे परावर्तन व्याख्या",
+        "परावर्तनाच्या संज्ञा (आपाती किरण, आपात बिंदू, परावर्तित किरण, स्तंभिका, आपतन/परावर्तन कोन)",
+        "परावर्तनाचे तीन नियम",
+        "नियमित व अनियमित परावर्तन",
+        "परावर्तित प्रकाशाचे परावर्तन (कॅलिडोस्कोप, परिदर्शी)"
+      ],
+      "key_concepts_defined": [
+        {
+          "concept": "परावर्तनाचे नियम",
+          "gloss": "three laws: angle equality, coplanarity, opposite-side-of-normal"
+        },
+        {
+          "concept": "नियमित/अनियमित परावर्तन",
+          "gloss": "regular (smooth surface, parallel rays stay parallel) vs irregular (rough surface, rays scatter) — both obey the same laws"
+        }
+      ],
+      "pronunciation_risk_terms": [],
+      "visual_and_activity_elements": [
+        {
+          "type": "करून पहा (3x)",
+          "topic": "dark-room light-switch sensory hook, comb-and-torch ray-tracing on paper with mirror, pin-and-protractor law-of-reflection verification (angle table for 30°/45°/60°)",
+          "narration_policy": "READ_DIRECTLY"
+        },
+        {
+          "type": "करून पहा (kaleidoscope & periscope DIY builds)",
+          "topic": "step-by-step construction of a cardboard/mirror kaleidoscope and a box periscope",
+          "narration_policy": "READ_DIRECTLY — maker/procedural instructions, numbered steps"
+        },
+        {
+          "type": "सोडविलेली उदाहरणे (4 worked geometry problems)",
+          "topic": "angle calculations using reflection laws",
+          "narration_policy": "READ_THEN_EXPLAIN — mathematical/geometric narration style"
+        },
+        {
+          "type": "diagrams 16.1-16.7",
+          "topic": "ray-tracing diagrams, angle-of-incidence/reflection labeled diagram, regular vs irregular reflection comparison, kaleidoscope and periscope construction diagrams, submarine periscope application photo",
+          "narration_policy": "ON_DEMAND — geometric diagrams are essential, not supplementary"
+        }
+      ],
+      "assessment": {
+        "fill_blank_count": 1,
+        "diagram_drawing_count": 2,
+        "scientific_reasoning_count": 1,
+        "definitions_via_diagram_count": 1,
+        "case_scenario_count": 1,
+        "numerical_geometry_count": 2,
+        "activity_projects_count": 1,
+        "types_present": [
+          "रिकाम्या जागी योग्य शब्द लिहा",
+          "आकृती काढा (angle construction)",
+          "सकारण स्पष्टीकरण",
+          "संज्ञा दर्शविणारी आकृती व स्पष्टीकरण",
+          "प्रसंग-आधारित प्रश्न (ripple distortion scenario)",
+          "उदाहरणे सोडवा (angle geometry)",
+          "उपक्रम"
+        ]
+      },
+      "narration_policy": "READ_THEN_EXPLAIN",
+      "speaking_style": "mathematical/scientific_explanation (geometric-diagram-dependent chapter — angle-based reasoning requires the diagram to be genuinely accessible, not merely captioned, for a blind learner to follow the geometry)",
+      "audience": "STUDENT",
+      "student_relevance": "ESSENTIAL",
+      "cross_chapter_references": [],
+      "source_status": "SOURCE_VERIFIED",
+      "verification_status": "TEACHER_OUTPUT"
+    },
+    {
+      "chapter_id": "CH_17",
+      "chapter_number": 17,
+      "title_marathi": "मानवनिर्मित पदार्थ",
+      "title_english_gloss": "Man-made Materials",
+      "pdf_page_range": [
+        126,
+        131
+      ],
+      "printed_page_range": [
+        116,
+        121
+      ],
+      "chapter_type": "science_expository",
+      "structural_pattern": {
+        "pattern_id": "PAT_SCI_17",
+        "pattern_name": "natural-vs-manmade distinction -> material-by-material catalogue (plastic, thermocol, glass), each with: definition/production -> types/subtypes table -> properties -> uses table -> environmental/health impact section",
+        "pattern_scope": "SUBJECT_SPECIFIC",
+        "evidence": "SUPPORTED_INFERENCE - derived from heading/activity/example order in raw text extraction"
+      },
+      "learning_units": [
+        "प्लॅस्टिक (थर्मोप्लॅस्टिक/थर्मोसेटिंग, गुणधर्म, प्रकार व उपयोग सारणी, पर्यावरणीय परिणाम, 4R सिद्धांत)",
+        "थर्मोकोल (उत्पादन, उपयोग, आरोग्य व पर्यावरण दुष्परिणाम)",
+        "काच (इतिहास, उत्पादन प्रक्रिया, गुणधर्म, प्रकार: सिलिका/बोरोसिलिकेट/अल्कली सिलिकेट/शिसेयुक्त/प्रकाशीय/रंगीत/संस्कारित)"
+      ],
+      "key_concepts_defined": [
+        {
+          "concept": "थर्मोप्लॅस्टिक vs थर्मोसेटिंग",
+          "gloss": "reshapeable-on-heating vs permanently-set-once-molded plastic"
+        },
+        {
+          "concept": "4R सिद्धांत",
+          "gloss": "Reduce-Reuse-Recycle-Recover principle for environmental responsibility"
+        },
+        {
+          "concept": "विघटनशील vs अविघटनशील",
+          "gloss": "biodegradable vs non-biodegradable, with a comparative decomposition-time table"
+        }
+      ],
+      "pronunciation_risk_terms": [
+        "सिलिका (SiO2)",
+        "सोडा लाईम काच",
+        "बोरोसिलिकेट काच",
+        "टेफ्लॉन (PTFE coating)",
+        "फेनेशियन व्यापारी (Phoenician traders, glass-discovery legend)"
+      ],
+      "visual_and_activity_elements": [
+        {
+          "type": "माहिती मिळवा (classification table task)",
+          "topic": "household items -> manmade vs natural material sorting",
+          "narration_policy": "EXCLUDE_FROM_NORMAL_READING"
+        },
+        {
+          "type": "माहीत आहे का तुम्हांला (2x)",
+          "topic": "plastic in healthcare/microwave cookware/Teflon coating (6 facts), decomposition-time comparison table",
+          "narration_policy": "READ_THEN_EXPLAIN"
+        },
+        {
+          "type": "health-hazard prose blocks (thermocol)",
+          "topic": "styrene carcinogenicity, leukemia/lymphoma risk, factory-worker health effects, pregnancy risk — SENSITIVE health-risk content",
+          "narration_policy": "READ_THEN_EXPLAIN — factual, non-alarmist tone per spec's general sensitivity guidance for health topics"
+        },
+        {
+          "type": "diagram 17.5",
+          "topic": "glass sheet manufacturing process (furnace->rollers->cutter)",
+          "narration_policy": "ON_DEMAND"
+        }
+      ],
+      "assessment": {
+        "fill_blank_count": 4,
+        "matching_count": 1,
+        "short_answer_count": 5,
+        "difference_count": 2,
+        "impact_and_remedy_count": 1,
+        "activity_projects_count": 2,
+        "types_present": [
+          "शोधा म्हणजे सापडेल (fill blank)",
+          "माझा जोडीदार कोण (matching)",
+          "प्रश्नांची उत्तरे लिहा",
+          "फरक स्पष्ट करा",
+          "पर्यावरण व आरोग्यावरील परिणाम व उपाययोजना",
+          "टीपा लिहा",
+          "उपक्रम",
+          "क्षेत्रभेट (field visit)"
+        ]
+      },
+      "narration_policy": "READ_THEN_EXPLAIN",
+      "speaking_style": "scientific_explanation (material-science catalogue genre; health-hazard passages on thermocol/styrene warrant a measured, factual tone consistent with other health-risk content in this book, e.g. CH_02)",
+      "audience": "STUDENT",
+      "student_relevance": "ESSENTIAL",
+      "cross_chapter_references": [],
+      "source_status": "SOURCE_VERIFIED",
+      "verification_status": "TEACHER_OUTPUT"
+    },
+    {
+      "chapter_id": "CH_18",
+      "chapter_number": 18,
+      "title_marathi": "परिसंस्था",
+      "title_english_gloss": "Ecosystem",
+      "pdf_page_range": [
+        132,
+        138
+      ],
+      "printed_page_range": [
+        122,
+        128
+      ],
+      "chapter_type": "science_expository",
+      "structural_pattern": {
+        "pattern_id": "PAT_SCI_18",
+        "pattern_name": "recall(biotic/abiotic sorting)->define ecosystem->structural diagram(abiotic+biotic components, trophic levels)->niche concept->biome classification(land vs aquatic, sub-types each with a fill-in food-chain table)->human-impact-on-ecosystem catalogue",
+        "pattern_scope": "SUBJECT_SPECIFIC",
+        "evidence": "SUPPORTED_INFERENCE - derived from heading/activity/example order in raw text extraction"
+      },
+      "learning_units": [
+        "परिसंस्थेची रचना (अजैविक: भौतिक/रासायनिक; जैविक: उत्पादक/भक्षक/विघटक)",
+        "निश (Niche) संकल्पना",
+        "बायोम्स: भू-परिसंस्था (गवताळ प्रदेश, जंगल) व जलीय परिसंस्था (गोड्या पाण्यातील, सागरी)",
+        "परिसंस्था ऱ्हासाला कारणीभूत मानवी प्रक्रिया (लोकसंख्यावाढ, शहरीकरण, औद्योगिकीकरण, पर्यटन, धरणे, युद्धे)"
+      ],
+      "key_concepts_defined": [
+        {
+          "concept": "निश (Niche)",
+          "gloss": "an organism's role/position relative to other organisms in the ecosystem"
+        },
+        {
+          "concept": "बायोम्स",
+          "gloss": "biomes - large-scale ecosystems sharing similar climate/abiotic conditions, term coined by Roy Clapham (1930), popularized by A.G. Tansley (1935)"
+        }
+      ],
+      "pronunciation_risk_terms": [
+        "रॉय क्लॅफाम (1930, coined 'ecosystem')",
+        "ए.जी. टान्सले (1935, popularized term)",
+        "दुधवा जंगल (Great one-horned rhino reintroduction, 1 April 1984)",
+        "गीर (Asiatic lion), दाचीगाम, रणथंबोर, दाजीपूर, काझीरंगा, सुंदरबन, मेळघाट, पेरियार (named National Parks)",
+        "The Great Himalayan National Park (white leopard sanctuary)",
+        "भरतपूर (bird sanctuary)"
+      ],
+      "visual_and_activity_elements": [
+        {
+          "type": "थोडे आठवा (sorting activity)",
+          "topic": "biotic/abiotic classification of a mixed list",
+          "narration_policy": "READ_DIRECTLY"
+        },
+        {
+          "type": "मागे वळून पाहताना (etymology/history box)",
+          "topic": "coining and popularization of the term 'ecosystem'",
+          "narration_policy": "READ_THEN_EXPLAIN"
+        },
+        {
+          "type": "माहीत आहे का तुम्हांला (3x)",
+          "topic": "Dudhwa rhino reintroduction story, India's ~520 protected areas, specific park specialties (white leopard/rhino/birds/tigers/lions)",
+          "narration_policy": "READ_THEN_EXPLAIN"
+        },
+        {
+          "type": "तक्ता पूर्ण करा (4x, food-chain/trophic-level tables per biome)",
+          "topic": "grassland/forest/freshwater ecosystem producer->primary->secondary->tertiary->decomposer tables, partially pre-filled for the student to complete",
+          "narration_policy": "READ_THEN_EXPLAIN — pattern-completion exercise, strong ML/deterministic-rule candidate given consistent 5-column template"
+        },
+        {
+          "type": "विचार करा (emotionally-framed reasoning scenario, Divija and the bee sting)",
+          "topic": "reasoning about ecological interdependence despite a negative personal experience (bee sting)",
+          "narration_policy": "READ_THEN_EXPLAIN — designed to build empathy/systems-thinking, worth preserving narrative framing rather than flattening to bare fact"
+        }
+      ],
+      "assessment": {
+        "fill_blank_count": 3,
+        "matching_count": 1,
+        "self_description_count": 3,
+        "scientific_reasoning_count": 3,
+        "short_answer_count": 5,
+        "image_description_count": 1,
+        "activity_projects_count": 2,
+        "types_present": [
+          "रिकाम्या जागा भरा",
+          "योग्य जोड्या जुळवा (producer->ecosystem)",
+          "माझ्याविषयी माहिती सांगा (self-description riddle: परिसंस्था/बायोम्स/अन्नजाळे)",
+          "शास्त्रीय कारणे द्या",
+          "प्रश्नांची उत्तरे लिहा",
+          "चित्रांचे वर्णन लिहा",
+          "उपक्रम"
+        ]
+      },
+      "narration_policy": "READ_THEN_EXPLAIN",
+      "speaking_style": "scientific_explanation / narrative (the Divija bee-sting scenario briefly shifts to a short narrative/empathy-building mode — flag for the narration engine as a genre exception within an otherwise expository chapter)",
+      "audience": "STUDENT",
+      "student_relevance": "ESSENTIAL",
+      "cross_chapter_references": [],
+      "source_status": "SOURCE_VERIFIED",
+      "verification_status": "TEACHER_OUTPUT"
+    },
+    {
+      "chapter_id": "CH_19",
+      "chapter_number": 19,
+      "title_marathi": "ताऱ्यांची जीवनयात्रा",
+      "title_english_gloss": "Life Journey of Stars",
+      "pdf_page_range": [
+        139,
+        144
+      ],
+      "printed_page_range": [
+        129,
+        134
+      ],
+      "chapter_type": "science_expository",
+      "structural_pattern": {
+        "pattern_id": "PAT_SCI_19",
+        "pattern_name": "scale-setting(galaxy/star basics, light-year unit)->star birth(interstellar cloud collapse)->star stability(gravity vs gas-pressure balance)->star evolution driven by mass->three-way branching to final states(white dwarf / neutron star / black hole), closing with a summary table",
+        "pattern_scope": "SUBJECT_SPECIFIC",
+        "evidence": "SUPPORTED_INFERENCE - derived from heading/activity/example order in raw text extraction"
+      },
+      "learning_units": [
+        "दीर्घिका व ताऱ्यांचे गुणधर्म (सूर्याचा डेटा: वस्तुमान, त्रिज्या, तापमान, वय)",
+        "प्रकाशवर्ष (light-year unit)",
+        "ताऱ्यांची निर्मिती (आंतरतारकीय मेघांचे आकुंचन)",
+        "ताऱ्यांचे स्थैर्य (गुरुत्वीय बल वि. वायूचा दाब समतोल)",
+        "ताऱ्यांची उत्क्रांती (इंधन-आधारित)",
+        "ताऱ्यांची अंतिम स्थिती: श्वेत बटू / न्यूट्रॉन तारा / कृष्ण विवर (mass-dependent, three-way table)"
+      ],
+      "key_concepts_defined": [
+        {
+          "concept": "प्रकाशवर्ष",
+          "gloss": "light-year = distance light travels in one year, ~9.5×10^12 km"
+        },
+        {
+          "concept": "कृष्ण विवर",
+          "gloss": "black hole - final state for stars >25 solar masses, gravity so strong not even light escapes"
+        },
+        {
+          "concept": "MSun",
+          "gloss": "solar-mass unit used to express other stars' mass relative to the Sun"
+        }
+      ],
+      "pronunciation_risk_terms": [
+        "अल्फा सेंटॉरीस (nearest star, 4.2 light-years)",
+        "हबल दुर्बीण (Hubble telescope)",
+        "मंदाकिनी (name of our galaxy, Milky Way)",
+        "सन 1054 महाविस्फोट (historically observed supernova, recorded by Chinese astronomers, visible in daylight for 2 years)"
+      ],
+      "visual_and_activity_elements": [
+        {
+          "type": "माहीत आहे का तुम्हांला (5x)",
+          "topic": "galaxy star-count (~10^11), light-travel-time comparisons (moon/sun/Alpha Centauri), gas-pressure-collapse-without-pressure thought experiment, white-dwarf/neutron-star density comparisons (one spoonful weighs tons / as much as all life on Earth), the 1054 supernova historical sighting",
+          "narration_policy": "READ_THEN_EXPLAIN — the density comparisons are strong candidates for vivid, carefully-paced explanation since they convey scale that's hard to grasp"
+        },
+        {
+          "type": "diagrams 19.1-19.8",
+          "topic": "spiral galaxy photo, star-size comparison diagram, interstellar-cloud Hubble photograph, star-cluster photograph, star-stability force-balance diagram, star-evolution branching flowchart, white-dwarf nebula photograph, supernova-remnant photograph",
+          "narration_policy": "ON_DEMAND — several are real astronomical photographs (NASA/ESO credited) requiring genuine accessibility description, not just captions"
+        },
+        {
+          "type": "summary table (mass -> final state)",
+          "topic": "<8 MSun->white dwarf, 8-25 MSun->neutron star, >25 MSun->black hole",
+          "narration_policy": "READ_DIRECTLY — compact, high-value deterministic summary, good CACHEABLE artifact"
+        }
+      ],
+      "assessment": {
+        "fill_blank_count": 13,
+        "true_false_count": 6,
+        "short_answer_count": 6,
+        "first_person_creative_count": 2,
+        "activity_projects_count": 2,
+        "types_present": [
+          "शोधा म्हणजे सापडेल (13-part fill-blank)",
+          "कोण खरे बोलतय (T/F, 6 parts)",
+          "प्रश्नांची उत्तरे लिहा",
+          "तुम्ही जर सूर्य असाल तर... (first-person creative writing)",
+          "श्वेत बटू बद्दल माहिती द्या",
+          "उपक्रम"
+        ]
+      },
+      "narration_policy": "READ_THEN_EXPLAIN",
+      "speaking_style": "scientific_explanation with descriptive flourishes for scale (this closing chapter pairs hard astrophysics with several scale-conveying analogies — worth a slightly more expressive delivery than the drier physics chapters, consistent with it being the book's capstone chapter)",
+      "audience": "STUDENT",
+      "student_relevance": "ESSENTIAL",
+      "cross_chapter_references": [
+        "concludes: the book's implicit progression from microscopic (CH_01 microbes, CH_05 atoms) to macroscopic (CH_19 stars) scale — a possible BOOK-LEVEL narrative arc worth flagging as a cross-chapter pattern"
+      ],
+      "source_status": "SOURCE_VERIFIED",
+      "verification_status": "TEACHER_OUTPUT"
+    }
+  ]
+}

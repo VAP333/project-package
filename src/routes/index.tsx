@@ -1,14 +1,14 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Camera, ShieldCheck, Headphones, BookOpenCheck, Sparkles, ArrowRight, Eye, Keyboard } from "lucide-react";
+import { FileText, ShieldCheck, Headphones, BookOpenCheck, Sparkles, ArrowRight, Eye, Keyboard, Layers, Binary } from "lucide-react";
 import { Card } from "@/components/app-shell";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "AksharSetu — Marathi textbooks, read aloud and verified" },
-      { name: "description", content: "AksharSetu turns photographed Marathi textbook pages into verified, spoken Marathi for visually impaired students." },
+      { name: "description", content: "AksharSetu ingests complete Marathi textbook PDFs into structured Physical and Learning graphs for verified, spoken Marathi for visually impaired students." },
       { property: "og:title", content: "AksharSetu — the bridge of letters" },
-      { property: "og:description", content: "Photograph a Marathi textbook page. Hear it read back, accurately." },
+      { property: "og:description", content: "Ingest Marathi textbook PDFs. Hear verified canonical text read back accurately." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -27,14 +27,14 @@ function Landing() {
             Every Marathi textbook page, <span className="text-primary">heard exactly as written.</span>
           </h1>
           <p className="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
-            AksharSetu is the bridge of letters — it turns a photo of a school page into verified, spoken Marathi for visually impaired students.
+            AksharSetu is the bridge of letters — it ingests school textbook PDFs as whole structured documents, mapping layout and learning units for verified, spoken Marathi.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <Link to="/capture" className="inline-flex items-center gap-2 rounded-xl bg-primary px-6 py-3 font-semibold text-primary-foreground shadow-soft transition hover:opacity-90">
-              <Camera className="h-5 w-5" aria-hidden /> Try it now
+              <FileText className="h-5 w-5" aria-hidden /> Ingest Textbook PDF
             </Link>
-            <Link to="/read" className="inline-flex items-center gap-2 rounded-xl border bg-card px-6 py-3 font-semibold transition hover:bg-accent">
-              <Headphones className="h-5 w-5" aria-hidden /> Hear a sample page
+            <Link to="/read" search={{ doc: "akshar-10", chapter: "ch_1", page: 1 }} className="inline-flex items-center gap-2 rounded-xl border bg-card px-6 py-3 font-semibold transition hover:bg-accent">
+              <Headphones className="h-5 w-5" aria-hidden /> Hear Chapter 1
             </Link>
           </div>
         </div>
@@ -44,9 +44,9 @@ function Landing() {
         <h2 id="how" className="text-center text-3xl font-bold tracking-tight">How it works</h2>
         <ol className="mt-10 grid gap-5 md:grid-cols-3">
           {[
-            { icon: Camera, t: "Capture", mr: "फोटो घ्या", d: "Choose the book, edition and page, then photograph it. We tell you instantly if the photo is clear enough." },
-            { icon: ShieldCheck, t: "Verify", mr: "तपासा", d: "Text is read and corrected against a subject dictionary. Words we can't read confidently are flagged — never guessed." },
-            { icon: Headphones, t: "Listen", mr: "ऐका", d: "Hear the page in natural Marathi, sentence by sentence, with full voice and keyboard control." },
+            { icon: Layers, t: "Structure Analysis", mr: "दस्तऐवज रचना", d: "Ingest textbook PDFs as complete documents. Distinguishes front matter, TOC, chapter boundaries, and separate physical vs printed pages." },
+            { icon: Binary, t: "Graph Synthesis", mr: "आलेख निर्मिती", d: "Generates Physical Document Graphs (exact geometry) and Learning Graphs (pedagogical units & concepts). Validates architectural invariants." },
+            { icon: Headphones, t: "Listen & Learn", mr: "ऐका व शिका", d: "Hear verified canonical text sentence by sentence in Reading Mode, with grounded explanations in AI Tutor Mode." },
           ].map((s, i) => (
             <li key={s.t}>
               <Card className="h-full transition hover:-translate-y-0.5">
@@ -61,6 +61,7 @@ function Landing() {
           ))}
         </ol>
       </section>
+
 
       <section className="mx-auto max-w-6xl px-4 py-16" aria-labelledby="modes">
         <h2 id="modes" className="text-center text-3xl font-bold tracking-tight">Two modes. Never confused.</h2>

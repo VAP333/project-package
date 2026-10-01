@@ -28,8 +28,9 @@ async function normalizeCatastrophicSsrResponse(response: Response): Promise<Res
   const body = await response.clone().text();
   if (!isH3SwallowedErrorBody(body)) return response;
 
-  console.error(consumeLastCapturedError() ?? new Error(`h3 swallowed SSR error: ${body}`));
-  return new Response(renderErrorPage(), {
+  const lastErr = consumeLastCapturedError() ?? new Error(`h3 swallowed SSR error: ${body}`);
+  console.error(lastErr);
+  return new Response(renderErrorPage(lastErr), {
     status: 500,
     headers: { "content-type": "text/html; charset=utf-8" },
   });
@@ -47,12 +48,36 @@ function isH3SwallowedErrorBody(body: string): boolean {
 export default {
   async fetch(request: Request, env: unknown, ctx: unknown) {
     try {
+      const url = new URL(request.url);
+      if (url.pathname.startsWith("/api/")) {
+        const targetUrl = `http://127.0.0.1:8000${url.pathname}${url.search}`;
+        try {
+          return await fetch(targetUrl, {
+            method: request.method,
+            headers: request.headers,
+            body: request.method !== "GET" && request.method !== "HEAD" ? await request.text() : undefined,
+          });
+        } catch (apiError) {
+          console.error(`[API Proxy Error] Failed to reach ${targetUrl}:`, apiError);
+          return new Response(
+            JSON.stringify({
+              error: "Backend Service Unavailable",
+              message: "FastAPI backend at http://127.0.0.1:8000 is currently starting or unreachable.",
+              detail: String(apiError),
+            }),
+            {
+              status: 503,
+              headers: { "content-type": "application/json; charset=utf-8" },
+            },
+          );
+        }
+      }
       const handler = await getServerEntry();
       const response = await handler.fetch(request, env, ctx);
       return await normalizeCatastrophicSsrResponse(response);
     } catch (error) {
-      console.error(error);
-      return new Response(renderErrorPage(), {
+      console.error("SSR Catastrophic Exception:", error);
+      return new Response(renderErrorPage(error), {
         status: 500,
         headers: { "content-type": "text/html; charset=utf-8" },
       });

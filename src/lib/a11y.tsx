@@ -57,8 +57,9 @@ export function useA11y() {
 /** Tiny UI-chrome dictionary. */
 const T = {
   home: { en: "Home", mr: "मुख्यपृष्ठ" },
-  capture: { en: "Capture", mr: "फोटो घ्या" },
+  capture: { en: "Ingest PDF", mr: "दस्तऐवज" },
   read: { en: "Read", mr: "वाचा" },
+
   library: { en: "Library", mr: "ग्रंथालय" },
   review: { en: "Review", mr: "तपासणी" },
   admin: { en: "Metrics", mr: "आकडेवारी" },

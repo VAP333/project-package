@@ -1,4 +1,4 @@
-# Logs
+# ─── Node / Frontend ──────────────────────────────────────────────────────────
 logs
 *.log
 npm-debug.log*
@@ -20,7 +20,7 @@ dist-ssr
 .wrangler/
 .dev.vars
 
-# Editor directories and files
+# Editor directories
 .vscode/*
 !.vscode/extensions.json
 .idea
@@ -30,3 +30,53 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# ─── Python / Backend ─────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.so
+*.egg-info/
+.eggs/
+build/
+*.whl
+
+# Virtual environments
+.venv/
+venv/
+env/
+.env/
+
+# ─── Secrets / Environment ────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ─── Runtime Data (never commit) ──────────────────────────────────────────────
+# SQLite database (runtime state)
+*.db
+*.sqlite
+*.sqlite3
+data/audio/
+data/audio_cache/
+data/uploads/
+data/tutor_sessions/
+data/ingestion_jobs/
+data/jobs/
+data/storage/
+data/sample_books/
+data/blueprints/
+data/science_ingestion_jobs.json
+data/feasibility_report.json
+
+# Scratch / Temp
+scratch/
+
+# Test cache
+.pytest_cache/
+
+# ─── Corpus PDFs (large binary files) ────────────────────────────────────────
+corpus/dataset/*.pdf
+dataset/*.pdf
